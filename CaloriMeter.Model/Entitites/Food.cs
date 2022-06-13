@@ -28,5 +28,6 @@ namespace CaloriMeter.Model.Entitites
         public virtual ICollection<MealDetail> MealDetails { get; set; }
         //sa
         // Son olarak
+        // merge ?
     }
 }
