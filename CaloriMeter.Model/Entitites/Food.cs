@@ -33,5 +33,7 @@ namespace CaloriMeter.Model.Entitites
 
         // 2. Başarılı merge işlemi...18:33-13.06.2022
 
+        // Bu yorum 'test' branchi üzerinde bulunuyor. Master ile merge edilecek.
+
     }
 }
