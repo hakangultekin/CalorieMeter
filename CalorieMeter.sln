@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieMeter.UI", "CaloriMeter.UI\CalorieMeter.UI.csproj", "{BCF36178-34AF-469D-9484-9A7FD667FC04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieMeter.BLL", "CaloriMeter.BLL\CalorieMeter.BLL.csproj", "{1F9A89E5-0B77-452A-8945-8AF135E35FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieMeter.DAL", "CaloriMeter.DAL\CalorieMeter.DAL.csproj", "{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieMeter.Model", "CaloriMeter.Model\CalorieMeter.Model.csproj", "{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF36178-34AF-469D-9484-9A7FD667FC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF36178-34AF-469D-9484-9A7FD667FC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF36178-34AF-469D-9484-9A7FD667FC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF36178-34AF-469D-9484-9A7FD667FC04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9A89E5-0B77-452A-8945-8AF135E35FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9A89E5-0B77-452A-8945-8AF135E35FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9A89E5-0B77-452A-8945-8AF135E35FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9A89E5-0B77-452A-8945-8AF135E35FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {919EAA2C-746E-4F68-9CCA-091C83B34A58}
+	EndGlobalSection
+EndGlobal
