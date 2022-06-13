@@ -17,7 +17,7 @@ namespace CaloriMeter.Model.Entitites
         public string ActivityName { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-       // public ActivityType ()
+       //yorum satırı 
 	
     }
 }
