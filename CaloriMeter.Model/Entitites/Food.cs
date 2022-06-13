@@ -26,21 +26,10 @@ namespace CaloriMeter.Model.Entitites
         public virtual User User { get; set; }
         public virtual Category Category { get; set; }
         public virtual ICollection<MealDetail> MealDetails { get; set; }
-<<<<<<< HEAD
-        
-
-
-        //Merge işlemi için yorum satırı 'test' branch i üzerinde...
-
-        // 2. Başarılı merge işlemi...18:33-13.06.2022
-
-        // Bu yorum 'test' branchi üzerinde bulunuyor. Master ile merge edilecek.
-=======
-        //tekrardan yorum eklendi
 
 
         //SAMPLE MERGE
->>>>>>> sample
+
 
     }
 }
