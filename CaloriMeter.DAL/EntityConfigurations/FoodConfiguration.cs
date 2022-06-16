@@ -13,6 +13,11 @@ namespace CaloriMeter.DAL.EntityConfigurations
         public FoodConfiguration()
         {
             Property(c => c.Name).IsRequired().HasMaxLength(50);
+            Property(c => c.Grams).IsRequired();
+            Property(c => c.Per100grCal).IsRequired();
+            Property(c => c.CategoryID).IsRequired();
+            Property(c => c.UserID).IsRequired();
+            Property(c => c.PortionSize).IsRequired();
         }
     }
 }

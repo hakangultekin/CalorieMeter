@@ -31,7 +31,7 @@ namespace CaloriMeter.DAL.Repositories
         /// <returns></returns>
         public List<Food> GetAllByUser(int userid)
         {
-            return db.Foods.Where(x => x.UserID == 0 && x.UserID == userid).ToList();
+            return db.Foods.Where(x => x.UserID == 1 && x.UserID == userid && x.State == true).ToList();
         }
 
         public List<Food> FindFood(string word)
@@ -41,7 +41,7 @@ namespace CaloriMeter.DAL.Repositories
 
         public List<Food> FindFoodByUser(int userid ,string word)
         {
-            return db.Foods.Where(x => x.Name.Contains(word) && x.UserID == userid).ToList();
+            return db.Foods.Where(x => x.Name.Contains(word) && x.UserID == 1 && x.UserID == userid && x.State == true).ToList();
         }
 
         public bool Insert(Food food)
@@ -58,12 +58,16 @@ namespace CaloriMeter.DAL.Repositories
             updatedFood.CategoryID = food.CategoryID;
             updatedFood.PortionSize = food.PortionSize;
             updatedFood.Per100grCal = food.Per100grCal;
-            updatedFood.State = food.State;
             updatedFood.Grams = food.Grams;
             int affRows = db.SaveChanges();
             return affRows > 0;
         }
 
+        /// <summary>
+        /// Verilen food'un state'ini false yaparak kullanıcıların listede görememesini sağlar. Delete mantığıyla çalışacak.
+        /// </summary>
+        /// <param name="foodid"></param>
+        /// <returns></returns>
         public bool DelistFood(int foodid)
         {
             Food food = db.Foods.SingleOrDefault(x => x.FoodID == foodid);
