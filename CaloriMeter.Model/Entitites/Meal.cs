@@ -21,7 +21,7 @@ namespace CaloriMeter.Model.Entitites
         public virtual User User { get; set; }
         public virtual MealType MealType { get; set; }
         public virtual ICollection<MealDetail> MealDetails { get; set; }
-        // bu bir yorum satırıdır.
+        
         //yorum satırı eklendi.
     }
 }

@@ -16,5 +16,6 @@ namespace CaloriMeter.Model.Entitites
 
         public virtual Meal Meal { get; set; }
         public virtual Food Food { get; set; }
+        
     }
 }
