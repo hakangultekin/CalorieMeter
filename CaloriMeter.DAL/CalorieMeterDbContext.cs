@@ -1,4 +1,5 @@
-﻿using CaloriMeter.DAL.EntityConfigurations;
+﻿using CalorieMeter.DAL.EntityConfigurations;
+using CaloriMeter.DAL.EntityConfigurations;
 using CaloriMeter.Model.Entitites;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace CaloriMeter.DAL
 {
     public class CalorieMeterDbContext : DbContext
     {
-        public CalorieMeterDbContext() : base("config")
+        public CalorieMeterDbContext() : base("Data Source = DESKTOP-T1ES9FG; Initial Catalog=CalorieMeterDB;User ID=sa;Password=1907302;")
         {
             Database.SetInitializer(new CalorieMeterStrategy());
         }
@@ -31,6 +32,7 @@ namespace CaloriMeter.DAL
             modelBuilder.Configurations.Add(new CategoryConfiguration());
             modelBuilder.Configurations.Add(new FoodConfiguration());
             modelBuilder.Configurations.Add(new MealTypeConfiguration());
+            modelBuilder.Configurations.Add(new MealConfiguration());
         }
 
     }

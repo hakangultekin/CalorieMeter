@@ -14,8 +14,8 @@ namespace CaloriMeter.Model.Entitites
         }
 
         public int MealID { get; set; }
-        public int MealTypeID { get; set; }
         public int UserID { get; set; }
+        public int MealTypeID { get; set; }
         public DateTime RegisterationDate { get; set; }
         public bool State { get; set; }
 

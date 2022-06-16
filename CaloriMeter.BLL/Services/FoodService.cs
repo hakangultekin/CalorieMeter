@@ -1,5 +1,5 @@
-﻿using CaloriMeter.DAL.Repositories;
-using CaloriMeter.Model.Entitites;
+﻿using CaloriMeter.Model.Entitites;
+using CaloriMeter.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

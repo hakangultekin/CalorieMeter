@@ -13,7 +13,7 @@ namespace CaloriMeter.Model.Entitites
             Users = new HashSet<User>();
         }
 
-        public int ActivityID { get; set; }
+        public int ActivityTypeID { get; set; }
         public string ActivityName { get; set; }
 
         public virtual ICollection<User> Users { get; set; }

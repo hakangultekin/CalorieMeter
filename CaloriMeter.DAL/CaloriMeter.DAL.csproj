@@ -8,8 +8,8 @@
     <ProjectGuid>{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CaloriMeter.DAL</RootNamespace>
-    <AssemblyName>CaloriMeter.DAL</AssemblyName>
+    <RootNamespace>CalorieMeter.DAL</RootNamespace>
+    <AssemblyName>CalorieMeter.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -56,6 +56,7 @@
     <Compile Include="EntityConfigurations\ActivityTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\CategoryConfiguration.cs" />
     <Compile Include="EntityConfigurations\FoodConfiguration.cs" />
+    <Compile Include="EntityConfigurations\MealConfiguration.cs" />
     <Compile Include="EntityConfigurations\MealTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,15 +71,14 @@
     <Compile Include="SeedConfigurations\FoodSeed.cs" />
     <Compile Include="SeedConfigurations\MealTypeSeed.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CaloriMeter.Model\CalorieMeter.Model.csproj">
+    <ProjectReference Include="..\CaloriMeter.Model\CaloriMeter.Model.csproj">
       <Project>{ab4eef7c-c166-46c3-9a8f-1949eeda8bae}</Project>
-      <Name>CalorieMeter.Model</Name>
+      <Name>CaloriMeter.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
