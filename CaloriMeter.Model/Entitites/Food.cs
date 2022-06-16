@@ -22,6 +22,7 @@ namespace CaloriMeter.Model.Entitites
         public int CategoryID { get; set; }
         public int UserID { get; set; }
         public PortionSize PortionSize { get; set; }
+        public string ImageUrl { get; set; }
 
         public virtual User User { get; set; }
         public virtual Category Category { get; set; }
