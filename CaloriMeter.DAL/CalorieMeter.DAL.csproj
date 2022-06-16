@@ -59,6 +59,10 @@
     <Compile Include="EntityConfigurations\MealTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ActivityTypeRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\FoodRepository.cs" />
+    <Compile Include="Repositories\MealRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="SeedConfigurations\ActivityTypeSeed.cs" />
     <Compile Include="SeedConfigurations\AdminSeed.cs" />
