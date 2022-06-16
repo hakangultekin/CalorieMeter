@@ -42,9 +42,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ActivityTypeService.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\FoodService.cs" />
+    <Compile Include="Services\MealService.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\CaloriMeter.DAL\CalorieMeter.DAL.csproj">
+      <Project>{7E43EDE0-D1A8-458F-BC5D-5DF5E77483F5}</Project>
+      <Name>CalorieMeter.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CaloriMeter.Model\CalorieMeter.Model.csproj">
+      <Project>{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}</Project>
+      <Name>CalorieMeter.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

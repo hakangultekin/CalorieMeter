@@ -73,5 +73,11 @@
   <ItemGroup>
     <Folder Include="Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaloriMeter.BLL\CalorieMeter.BLL.csproj">
+      <Project>{1f9a89e5-0b77-452a-8945-8af135e35fe0}</Project>
+      <Name>CalorieMeter.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
