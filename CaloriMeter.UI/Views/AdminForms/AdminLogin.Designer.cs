@@ -28,51 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnKullaniciKontrol = new System.Windows.Forms.Button();
+            this.btnKategori = new System.Windows.Forms.Button();
+            this.btnIstatistik = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnKullaniciKontrol
             // 
-            this.button1.Location = new System.Drawing.Point(41, 49);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 77);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Kullanıcı Kontrol";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnKullaniciKontrol.Location = new System.Drawing.Point(41, 49);
+            this.btnKullaniciKontrol.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKullaniciKontrol.Name = "btnKullaniciKontrol";
+            this.btnKullaniciKontrol.Size = new System.Drawing.Size(245, 77);
+            this.btnKullaniciKontrol.TabIndex = 0;
+            this.btnKullaniciKontrol.Text = "Kullanıcı Kontrol";
+            this.btnKullaniciKontrol.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnKategori
             // 
-            this.button2.Location = new System.Drawing.Point(315, 49);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(245, 77);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Kategori ve Ürün Kontrol";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnKategori.Location = new System.Drawing.Point(315, 49);
+            this.btnKategori.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKategori.Name = "btnKategori";
+            this.btnKategori.Size = new System.Drawing.Size(245, 77);
+            this.btnKategori.TabIndex = 0;
+            this.btnKategori.Text = "Kategori ve Ürün Kontrol";
+            this.btnKategori.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnIstatistik
             // 
-            this.button3.Location = new System.Drawing.Point(595, 49);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(245, 77);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "İstatistik Kontrol";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnIstatistik.Location = new System.Drawing.Point(595, 49);
+            this.btnIstatistik.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIstatistik.Name = "btnIstatistik";
+            this.btnIstatistik.Size = new System.Drawing.Size(245, 77);
+            this.btnIstatistik.TabIndex = 0;
+            this.btnIstatistik.Text = "İstatistik Kontrol";
+            this.btnIstatistik.UseVisualStyleBackColor = true;
             // 
             // AdminLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 548);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIstatistik);
+            this.Controls.Add(this.btnKategori);
+            this.Controls.Add(this.btnKullaniciKontrol);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminLogin";
             this.Text = "AdminLogin";
             this.ResumeLayout(false);
@@ -81,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnKullaniciKontrol;
+        private System.Windows.Forms.Button btnKategori;
+        private System.Windows.Forms.Button btnIstatistik;
     }
 }

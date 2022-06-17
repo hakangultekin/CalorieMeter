@@ -37,10 +37,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnAnasayfa = new System.Windows.Forms.Button();
+            this.btnOgunEkle = new System.Windows.Forms.Button();
+            this.btnIstatistikler = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.lblMevcutKilo = new System.Windows.Forms.Label();
+            this.llblHedefKilo = new System.Windows.Forms.Label();
+            this.lblEndeks = new System.Windows.Forms.Label();
+            this.lblKalan = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -50,12 +54,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(346, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 27);
+            this.label1.Size = new System.Drawing.Size(107, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hoşgeldiniz";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblEndeks);
+            this.groupBox1.Controls.Add(this.llblHedefKilo);
+            this.groupBox1.Controls.Add(this.lblMevcutKilo);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -71,7 +78,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(26, 56);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 27);
+            this.label4.Size = new System.Drawing.Size(117, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "Mevcut Kilo :";
             // 
@@ -80,7 +87,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(26, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 27);
+            this.label3.Size = new System.Drawing.Size(151, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Hedeflenen Kilo :";
             // 
@@ -89,7 +96,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 27);
+            this.label2.Size = new System.Drawing.Size(175, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Vücut Kitle Endeksi :";
             // 
@@ -102,6 +109,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblKalan);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.progressBar1);
@@ -117,7 +125,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(58, 118);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 27);
+            this.label6.Size = new System.Drawing.Size(54, 23);
             this.label6.TabIndex = 0;
             this.label6.Text = "Kalan";
             // 
@@ -126,55 +134,91 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(126, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 27);
+            this.label5.Size = new System.Drawing.Size(173, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "Günlük Kalori : 1800";
             // 
-            // button5
+            // btnAnasayfa
             // 
-            this.button5.Location = new System.Drawing.Point(30, 107);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 59);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Ana Sayfa";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAnasayfa.Location = new System.Drawing.Point(30, 107);
+            this.btnAnasayfa.Name = "btnAnasayfa";
+            this.btnAnasayfa.Size = new System.Drawing.Size(129, 59);
+            this.btnAnasayfa.TabIndex = 4;
+            this.btnAnasayfa.Text = "Ana Sayfa";
+            this.btnAnasayfa.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnOgunEkle
             // 
-            this.button6.Location = new System.Drawing.Point(30, 279);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(129, 59);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Öğün Ekle";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnOgunEkle.Location = new System.Drawing.Point(30, 279);
+            this.btnOgunEkle.Name = "btnOgunEkle";
+            this.btnOgunEkle.Size = new System.Drawing.Size(129, 59);
+            this.btnOgunEkle.TabIndex = 4;
+            this.btnOgunEkle.Text = "Öğün Ekle";
+            this.btnOgunEkle.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnIstatistikler
             // 
-            this.button7.Location = new System.Drawing.Point(30, 362);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(129, 59);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "İstatistikler";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnIstatistikler.Location = new System.Drawing.Point(30, 362);
+            this.btnIstatistikler.Name = "btnIstatistikler";
+            this.btnIstatistikler.Size = new System.Drawing.Size(129, 59);
+            this.btnIstatistikler.TabIndex = 4;
+            this.btnIstatistikler.Text = "İstatistikler";
+            this.btnIstatistikler.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnGuncelle
             // 
-            this.button8.Location = new System.Drawing.Point(30, 190);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(129, 65);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Bilgilerimi Güncelle";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Location = new System.Drawing.Point(30, 190);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(129, 65);
+            this.btnGuncelle.TabIndex = 4;
+            this.btnGuncelle.Text = "Bilgilerimi Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            // 
+            // lblMevcutKilo
+            // 
+            this.lblMevcutKilo.AutoSize = true;
+            this.lblMevcutKilo.Location = new System.Drawing.Point(172, 56);
+            this.lblMevcutKilo.Name = "lblMevcutKilo";
+            this.lblMevcutKilo.Size = new System.Drawing.Size(117, 23);
+            this.lblMevcutKilo.TabIndex = 0;
+            this.lblMevcutKilo.Text = "Mevcut Kilo :";
+            // 
+            // llblHedefKilo
+            // 
+            this.llblHedefKilo.AutoSize = true;
+            this.llblHedefKilo.Location = new System.Drawing.Point(183, 100);
+            this.llblHedefKilo.Name = "llblHedefKilo";
+            this.llblHedefKilo.Size = new System.Drawing.Size(117, 23);
+            this.llblHedefKilo.TabIndex = 0;
+            this.llblHedefKilo.Text = "Mevcut Kilo :";
+            // 
+            // lblEndeks
+            // 
+            this.lblEndeks.AutoSize = true;
+            this.lblEndeks.Location = new System.Drawing.Point(218, 149);
+            this.lblEndeks.Name = "lblEndeks";
+            this.lblEndeks.Size = new System.Drawing.Size(68, 23);
+            this.lblEndeks.TabIndex = 0;
+            this.lblEndeks.Text = "endeks";
+            // 
+            // lblKalan
+            // 
+            this.lblKalan.AutoSize = true;
+            this.lblKalan.Location = new System.Drawing.Point(123, 118);
+            this.lblKalan.Name = "lblKalan";
+            this.lblKalan.Size = new System.Drawing.Size(54, 23);
+            this.lblKalan.TabIndex = 0;
+            this.lblKalan.Text = "Kalan";
             // 
             // UserLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 674);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.btnIstatistikler);
+            this.Controls.Add(this.btnOgunEkle);
+            this.Controls.Add(this.btnAnasayfa);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -202,9 +246,13 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnAnasayfa;
+        private System.Windows.Forms.Button btnOgunEkle;
+        private System.Windows.Forms.Button btnIstatistikler;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.Label lblEndeks;
+        private System.Windows.Forms.Label llblHedefKilo;
+        private System.Windows.Forms.Label lblMevcutKilo;
+        private System.Windows.Forms.Label lblKalan;
     }
 }
