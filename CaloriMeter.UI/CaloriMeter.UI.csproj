@@ -48,11 +48,59 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AdminForms\AdminCategoriesandFoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminCategoriesandFoods.Designer.cs">
+      <DependentUpon>AdminCategoriesandFoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminStatistics.Designer.cs">
+      <DependentUpon>AdminStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminUserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminForms\AdminUserControl.Designer.cs">
+      <DependentUpon>AdminUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserForms\Meals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserForms\Meals.Designer.cs">
+      <DependentUpon>Meals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserForms\Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserForms\Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserForms\UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserForms\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserForms\UserRegistiration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserForms\UserRegistiration.Designer.cs">
+      <DependentUpon>UserRegistiration.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,6 +112,33 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\AdminForms\AdminCategoriesandFoods.resx">
+      <DependentUpon>AdminCategoriesandFoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminForms\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminForms\AdminStatistics.resx">
+      <DependentUpon>AdminStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminForms\AdminUserControl.resx">
+      <DependentUpon>AdminUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserForms\Meals.resx">
+      <DependentUpon>Meals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserForms\Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserForms\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserForms\UserRegistiration.resx">
+      <DependentUpon>UserRegistiration.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,9 +152,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\AdminForms\" />
-    <Folder Include="Views\UserForms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
