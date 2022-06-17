@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CaloriMeter.Model.Entitites;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,10 @@ namespace CaloriMeter.DAL.SeedConfigurations
     {
         public ActivityTypeSeed(CalorieMeterDbContext context)
         {
-
+            context.ActivityTypes.Add(new ActivityType() { ActivityName = "Aktivite Yok" });
+            context.ActivityTypes.Add(new ActivityType() { ActivityName = "Az Aktif" });
+            context.ActivityTypes.Add(new ActivityType() { ActivityName = "Aktif" });
+            context.ActivityTypes.Add(new ActivityType() { ActivityName = "Çok Aktif" });
         }
     }
 }
