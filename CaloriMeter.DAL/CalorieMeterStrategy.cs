@@ -13,11 +13,14 @@ namespace CaloriMeter.DAL
         protected override void Seed(CalorieMeterDbContext context)
         {
             // seed data eklenecek
+          
             new AdminSeed(context);
             new ActivityTypeSeed(context);
             new CategorySeed(context);
             new FoodSeed(context);
             new MealTypeSeed(context);
+
+            context.SaveChanges();
         }
     }
 }
