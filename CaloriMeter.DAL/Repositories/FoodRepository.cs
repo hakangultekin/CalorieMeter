@@ -57,7 +57,7 @@ namespace CaloriMeter.DAL.Repositories
             updatedFood.Name = food.Name;
             updatedFood.CategoryID = food.CategoryID;
             updatedFood.PortionSize = food.PortionSize;
-            updatedFood.Per100grCal = food.Per100grCal;
+            updatedFood.Per100Cal = food.Per100Cal;
             updatedFood.Grams = food.Grams;
             int affRows = db.SaveChanges();
             return affRows > 0;

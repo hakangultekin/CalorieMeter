@@ -16,13 +16,12 @@ namespace CaloriMeter.Model.Entitites
 
         public int FoodID { get; set; }
         public string Name { get; set; }
-        public int Per100grCal { get; set; }
-        public int Grams { get; set; }
-        public bool State { get; set; }
+        public int Per100Cal { get; set; }
+        public int Grams { get; set; } = 100;
+        public bool State { get; set; } = true;
         public int CategoryID { get; set; }
         public int UserID { get; set; }
         public PortionSize PortionSize { get; set; }
-        public string ImageUrl { get; set; }
 
         public virtual User User { get; set; }
         public virtual Category Category { get; set; }

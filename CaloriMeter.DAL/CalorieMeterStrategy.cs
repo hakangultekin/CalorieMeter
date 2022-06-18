@@ -16,11 +16,11 @@ namespace CaloriMeter.DAL
         {
             // seed data eklenecek
 
-            //new CategorySeed(context);
-            //new ActivityTypeSeed(context);
-            //new AdminSeed(context);
-            //new MealTypeSeed(context);
-            //new FoodSeed(context);
+            new CategorySeed(context);
+            new ActivityTypeSeed(context);
+            new AdminSeed(context);
+            new MealTypeSeed(context);
+            new FoodSeed(context);
 
             //context.ActivityTypes.Add(new ActivityType() { ActivityName = "Aktivite Yok" });
 

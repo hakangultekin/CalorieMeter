@@ -59,9 +59,13 @@
     <Compile Include="EntityConfigurations\MealConfiguration.cs" />
     <Compile Include="EntityConfigurations\MealTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
-    <Compile Include="Migrations\202206181214403_FirstCommit.cs" />
-    <Compile Include="Migrations\202206181214403_FirstCommit.designer.cs">
-      <DependentUpon>202206181214403_FirstCommit.cs</DependentUpon>
+    <Compile Include="Migrations\202206181330163_FirstCommit.cs" />
+    <Compile Include="Migrations\202206181330163_FirstCommit.designer.cs">
+      <DependentUpon>202206181330163_FirstCommit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206181332509_updateFoods.cs" />
+    <Compile Include="Migrations\202206181332509_updateFoods.designer.cs">
+      <DependentUpon>202206181332509_updateFoods.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +91,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206181214403_FirstCommit.resx">
-      <DependentUpon>202206181214403_FirstCommit.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206181330163_FirstCommit.resx">
+      <DependentUpon>202206181330163_FirstCommit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206181332509_updateFoods.resx">
+      <DependentUpon>202206181332509_updateFoods.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
