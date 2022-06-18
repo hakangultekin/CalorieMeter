@@ -7,13 +7,13 @@ namespace CalorieMeter.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class updateFoods : IMigrationMetadata
+    public sealed partial class firstdb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(updateFoods));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(firstdb));
         
         string IMigrationMetadata.Id
         {
-            get { return "202206181332509_updateFoods"; }
+            get { return "202206181634052_firstdb"; }
         }
         
         string IMigrationMetadata.Source

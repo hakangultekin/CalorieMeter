@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CaloriMeter.Model.Entitites;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace CaloriMeter.UI.Views.UserForms
 {
     public partial class UserLogin : Form
     {
-        public UserLogin()
+        User user;
+        public UserLogin(User _user)
         {
             InitializeComponent();
+            user = _user;
         }
 
     }

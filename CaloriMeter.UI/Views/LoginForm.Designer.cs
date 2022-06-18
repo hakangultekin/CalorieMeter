@@ -54,14 +54,14 @@
             // 
             this.linkKayit.AutoSize = true;
             this.linkKayit.BackColor = System.Drawing.Color.Transparent;
-            this.linkKayit.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkKayit.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.linkKayit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.linkKayit.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.linkKayit.Location = new System.Drawing.Point(156, 372);
             this.linkKayit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkKayit.Name = "linkKayit";
-            this.linkKayit.Size = new System.Drawing.Size(185, 20);
-            this.linkKayit.TabIndex = 11;
+            this.linkKayit.Size = new System.Drawing.Size(192, 19);
+            this.linkKayit.TabIndex = 3;
             this.linkKayit.TabStop = true;
             this.linkKayit.Text = "Kayıt Olmak İçin Tıklayınız";
             this.linkKayit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkKayit_LinkClicked);
@@ -74,7 +74,7 @@
             this.txtParola.Margin = new System.Windows.Forms.Padding(4);
             this.txtParola.Name = "txtParola";
             this.txtParola.Size = new System.Drawing.Size(287, 22);
-            this.txtParola.TabIndex = 9;
+            this.txtParola.TabIndex = 1;
             this.txtParola.UseSystemPasswordChar = true;
             // 
             // txtKullaniciAd
@@ -85,7 +85,7 @@
             this.txtKullaniciAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtKullaniciAd.Name = "txtKullaniciAd";
             this.txtKullaniciAd.Size = new System.Drawing.Size(286, 22);
-            this.txtKullaniciAd.TabIndex = 10;
+            this.txtKullaniciAd.TabIndex = 0;
             // 
             // label2
             // 
@@ -115,43 +115,45 @@
             // 
             // btnGiris
             // 
-            this.btnGiris.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnGiris.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGiris.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(124)))));
             this.btnGiris.FlatAppearance.BorderSize = 2;
             this.btnGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGiris.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGiris.ForeColor = System.Drawing.Color.Teal;
+            this.btnGiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(124)))));
             this.btnGiris.Image = global::CaloriMeter.UI.Properties.Resources.login32x32;
-            this.btnGiris.Location = new System.Drawing.Point(216, 311);
-            this.btnGiris.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGiris.Location = new System.Drawing.Point(205, 314);
             this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(127, 41);
-            this.btnGiris.TabIndex = 6;
+            this.btnGiris.Size = new System.Drawing.Size(143, 41);
+            this.btnGiris.TabIndex = 2;
             this.btnGiris.Text = "Giriş Yap";
             this.btnGiris.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.UseVisualStyleBackColor = false;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(124)))));
             this.BackgroundImage = global::CaloriMeter.UI.Properties.Resources.bggray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(387, 469);
+            this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkKayit);
             this.Controls.Add(this.txtParola);
             this.Controls.Add(this.txtKullaniciAd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnGiris);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hoşgeldiniz - CalorieMeter";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

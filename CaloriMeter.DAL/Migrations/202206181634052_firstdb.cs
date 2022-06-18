@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class FirstCommit : DbMigration
+    public partial class firstdb : DbMigration
     {
         public override void Up()
         {
@@ -43,13 +43,12 @@
                     {
                         FoodID = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false, maxLength: 50),
-                        Per100grCal = c.Int(nullable: false),
+                        Per100Cal = c.Int(nullable: false),
                         Grams = c.Int(nullable: false),
                         State = c.Boolean(nullable: false),
                         CategoryID = c.Int(nullable: false),
                         UserID = c.Int(nullable: false),
                         PortionSize = c.Int(nullable: false),
-                        ImageUrl = c.String(),
                     })
                 .PrimaryKey(t => t.FoodID)
                 .ForeignKey("dbo.Categories", t => t.CategoryID, cascadeDelete: true)

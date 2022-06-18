@@ -83,6 +83,7 @@ namespace CaloriMeter.BLL.Services
         public bool Insert(User entity)
         {
             CheckRequired(entity);
+            CheckEmailValid(entity.UserName);
             return userRepository.Insert(entity);
         }
 
@@ -119,6 +120,12 @@ namespace CaloriMeter.BLL.Services
             if (user.LastName == null) throw new Exception("Soyad alanı boş olamaz.");
             if (user.UserName == null) throw new Exception("Username alanı boş olamaz.");
             if (user.Password == null) throw new Exception("Şifre alanı boş olamaz.");
+            if (string.IsNullOrWhiteSpace(user.Height.ToString()) || string.IsNullOrWhiteSpace(user.Weight.ToString())) throw new Exception("Boy ve kilo alanlarını giriniz.");
+        }
+
+        void CheckEmailValid(string value)
+        {
+            if (!value.Contains("@") || !value.Contains(".")) throw new Exception("Email adresi geçersiz.");
         }
     }
 }
