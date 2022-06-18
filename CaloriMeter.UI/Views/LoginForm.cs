@@ -1,6 +1,8 @@
 ﻿using CaloriMeter.BLL.Services;
 using CaloriMeter.Model.Entitites;
 using CaloriMeter.Model.Enums;
+using CaloriMeter.UI.Views.AdminForms;
+using CaloriMeter.UI.Views.UserForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,17 +25,19 @@ namespace CaloriMeter.UI.Views
 
         private void linkKayit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            UserForms.UserRegistiration userRegistiration = new UserForms.UserRegistiration();
+            UserRegistiration userRegistiration = new UserRegistiration();
+            this.Hide();
             userRegistiration.ShowDialog();
+            this.Show();
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            User user = new User();
             string userName = txtKullaniciAd.Text;
             string password = txtParola.Text;
 
             userService = new UserService();
+            User user = userService.CheckLogin(userName, password);
 
             try
             {
@@ -44,16 +48,17 @@ namespace CaloriMeter.UI.Views
                         MessageBox.Show("Admin bu kullanıcıyı onaylamamış");
                         return;
                     }
+
                     switch (user.UserType)
                     {
                         case UserType.Admin:
-                            AdminForms.AdminLogin adminLogin = new AdminForms.AdminLogin();
+                            AdminLogin adminLogin = new AdminLogin();
                             this.Hide();
                             adminLogin.ShowDialog();
                             this.Show();
                             break;
                         case UserType.Standard:
-                            UserForms.UserLogin userLogin = new UserForms.UserLogin();
+                            UserLogin userLogin = new UserLogin();
                             this.Hide();
                             userLogin.ShowDialog();
                             this.Show();
@@ -70,5 +75,6 @@ namespace CaloriMeter.UI.Views
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

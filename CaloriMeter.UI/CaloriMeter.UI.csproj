@@ -162,5 +162,14 @@
       <Name>CaloriMeter.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bggray.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caloriemeterlogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

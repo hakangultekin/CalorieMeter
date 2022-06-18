@@ -15,6 +15,8 @@ namespace CaloriMeter.DAL.SeedConfigurations
             context.MealTypes.Add(new MealType() { MealTypeName = "Öğle Yemeği" });
             context.MealTypes.Add(new MealType() { MealTypeName = "Akşam Yemeği" });
             context.MealTypes.Add(new MealType() { MealTypeName = "Ara Öğün" });
+
+            context.SaveChanges();
         }
     }
 }

@@ -56,6 +56,8 @@ namespace CaloriMeter.DAL.SeedConfigurations
             context.Categories.Add(new Category() { Name = "Yoğurt" });//43
             context.Categories.Add(new Category() { Name = "Yulaf Ezmesi, Müsli ve Tahıl Gevrekleri" });//44
 
+            context.SaveChanges();
+
         }
     }
 }

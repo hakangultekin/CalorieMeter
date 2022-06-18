@@ -1814,7 +1814,7 @@ namespace CaloriMeter.DAL.SeedConfigurations
             context.Foods.Add(new Food() { Name = "Yulaf Ezmesi", Per100grCal = 375, CategoryID = 44 });
 
 
-
+            context.SaveChanges();
 
         }
     }

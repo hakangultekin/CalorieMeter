@@ -18,7 +18,8 @@ namespace CaloriMeter.DAL.SeedConfigurations
                 LastName = "admin",
                 UserName = "admin",
                 Password = "admin",
-                UserType = UserType.Admin
+                UserType = UserType.Admin,
+                ActivityTypeID = 1
             };
 
             context.Users.Add(admin);

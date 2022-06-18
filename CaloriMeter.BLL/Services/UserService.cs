@@ -17,6 +17,17 @@ namespace CaloriMeter.BLL.Services
         }
 
         /// <summary>
+        /// Kullanıcı adı ve şifresi uyan kullanıcı varsa kullanıcıyı döndürür. Hatalı bilgi verildiyse null dönüş yapar.
+        /// </summary>
+        /// <param name="username">kullanıcı adı</param>
+        /// <param name="password">şifre</param>
+        /// <returns></returns>
+        public User CheckLogin(string username, string password)
+        {
+            return userRepository.CheckLogin(username, password);
+        }
+
+        /// <summary>
         /// Verilen ID'ye ait kullanıcıyı döndürür.
         /// </summary>
         /// <param name="id"></param>

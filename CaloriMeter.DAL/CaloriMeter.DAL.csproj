@@ -59,6 +59,11 @@
     <Compile Include="EntityConfigurations\MealConfiguration.cs" />
     <Compile Include="EntityConfigurations\MealTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
+    <Compile Include="Migrations\202206181214403_FirstCommit.cs" />
+    <Compile Include="Migrations\202206181214403_FirstCommit.designer.cs">
+      <DependentUpon>202206181214403_FirstCommit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ActivityTypeRepository.cs" />
     <Compile Include="Repositories\CategoryRepository.cs" />
@@ -80,6 +85,11 @@
       <Project>{ab4eef7c-c166-46c3-9a8f-1949eeda8bae}</Project>
       <Name>CaloriMeter.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202206181214403_FirstCommit.resx">
+      <DependentUpon>202206181214403_FirstCommit.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

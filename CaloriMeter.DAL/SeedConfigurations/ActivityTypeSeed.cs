@@ -15,6 +15,7 @@ namespace CaloriMeter.DAL.SeedConfigurations
             context.ActivityTypes.Add(new ActivityType() { ActivityName = "Az Aktif" });
             context.ActivityTypes.Add(new ActivityType() { ActivityName = "Aktif" });
             context.ActivityTypes.Add(new ActivityType() { ActivityName = "Çok Aktif" });
+            context.SaveChanges();
         }
     }
 }

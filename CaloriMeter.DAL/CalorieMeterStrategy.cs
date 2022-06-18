@@ -1,4 +1,6 @@
 ﻿using CaloriMeter.DAL.SeedConfigurations;
+using CaloriMeter.Model.Entitites;
+using CaloriMeter.Model.Enums;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,14 +15,27 @@ namespace CaloriMeter.DAL
         protected override void Seed(CalorieMeterDbContext context)
         {
             // seed data eklenecek
-          
-            new AdminSeed(context);
-            new ActivityTypeSeed(context);
-            new CategorySeed(context);
-            new FoodSeed(context);
-            new MealTypeSeed(context);
 
-            context.SaveChanges();
+            //new CategorySeed(context);
+            //new ActivityTypeSeed(context);
+            //new AdminSeed(context);
+            //new MealTypeSeed(context);
+            //new FoodSeed(context);
+
+            //context.ActivityTypes.Add(new ActivityType() { ActivityName = "Aktivite Yok" });
+
+            //User admin = new User()
+            //{
+            //    Name = "admin",
+            //    LastName = "admin",
+            //    UserName = "admin",
+            //    Password = "admin",
+            //    UserType = UserType.Admin,
+            //    ActivityTypeID = 1,
+            //};
+
+            //context.Users.Add(admin);
+            //context.SaveChanges();
         }
     }
 }
