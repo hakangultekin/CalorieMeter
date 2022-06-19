@@ -130,9 +130,10 @@ namespace CaloriMeter.UI.Views.UserForms
             }
         }
 
-        private void MyMeals_FormClosed(object sender, FormClosedEventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }

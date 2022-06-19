@@ -177,35 +177,25 @@ namespace CaloriMeter.UI.Views.UserForms
         public void btn_bilgiGuncelle_click(object sender, EventArgs e)
         {
             if (ui == null) ui = new UpdateInfo(user);
-            ui.Owner = this;
             this.Hide();
             ui.ShowDialog();
+            this.Show();
         }
 
         private void btn_ogunEkle_Click(object sender, EventArgs e)
         {
-            OgunEkleAc();
-        }
-
-        public void OgunEkleAc()
-        {
             if (myMeals == null) myMeals = new MyMeals(user.UserID);
-            myMeals.Owner = this;
             this.Hide();
             myMeals.ShowDialog();
+            this.Show();
         }
 
         private void btn_istatistikler_Click(object sender, EventArgs e)
         {
-            IstatistikShow();
-        }
-
-        public void IstatistikShow()
-        {
             if (stats == null) stats = new Statistics(user.UserID);
-            stats.Owner = this;
             this.Hide();
             stats.ShowDialog();
+            this.Show();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

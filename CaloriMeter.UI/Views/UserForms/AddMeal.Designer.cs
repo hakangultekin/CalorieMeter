@@ -64,9 +64,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.Size = new System.Drawing.Size(124, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Öğün Türü Seçin";
             // 
@@ -82,7 +84,7 @@
             this.lst_ogunDetay.Location = new System.Drawing.Point(12, 130);
             this.lst_ogunDetay.MultiSelect = false;
             this.lst_ogunDetay.Name = "lst_ogunDetay";
-            this.lst_ogunDetay.Size = new System.Drawing.Size(641, 175);
+            this.lst_ogunDetay.Size = new System.Drawing.Size(641, 275);
             this.lst_ogunDetay.TabIndex = 15;
             this.lst_ogunDetay.UseCompatibleStateImageBehavior = false;
             this.lst_ogunDetay.View = System.Windows.Forms.View.Details;
@@ -115,7 +117,7 @@
             this.btn_ekle.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
             this.btn_ekle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btn_ekle.Image = global::CaloriMeter.UI.Properties.Resources.addicon32x32;
-            this.btn_ekle.Location = new System.Drawing.Point(573, 81);
+            this.btn_ekle.Location = new System.Drawing.Point(573, 83);
             this.btn_ekle.Name = "btn_ekle";
             this.btn_ekle.Size = new System.Drawing.Size(80, 41);
             this.btn_ekle.TabIndex = 16;
@@ -126,7 +128,7 @@
             // 
             // txt_yemekAdi
             // 
-            this.txt_yemekAdi.Location = new System.Drawing.Point(57, 97);
+            this.txt_yemekAdi.Location = new System.Drawing.Point(57, 99);
             this.txt_yemekAdi.Name = "txt_yemekAdi";
             this.txt_yemekAdi.ReadOnly = true;
             this.txt_yemekAdi.Size = new System.Drawing.Size(196, 25);
@@ -134,7 +136,7 @@
             // 
             // txt_kalori
             // 
-            this.txt_kalori.Location = new System.Drawing.Point(491, 94);
+            this.txt_kalori.Location = new System.Drawing.Point(491, 99);
             this.txt_kalori.Name = "txt_kalori";
             this.txt_kalori.ReadOnly = true;
             this.txt_kalori.Size = new System.Drawing.Size(69, 25);
@@ -144,9 +146,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(53, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(84, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Yemek Adı";
             // 
@@ -154,9 +158,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(487, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 20);
+            this.label3.Size = new System.Drawing.Size(50, 19);
             this.label3.TabIndex = 1;
             this.label3.Text = "Kalori";
             // 
@@ -164,9 +170,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(393, 74);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.Size = new System.Drawing.Size(48, 19);
             this.label4.TabIndex = 1;
             this.label4.Text = "Gram";
             // 
@@ -177,7 +185,7 @@
             this.cb_birim.Items.AddRange(new object[] {
             "100 Gr",
             "Porsiyon / Adet"});
-            this.cb_birim.Location = new System.Drawing.Point(259, 95);
+            this.cb_birim.Location = new System.Drawing.Point(259, 97);
             this.cb_birim.Name = "cb_birim";
             this.cb_birim.Size = new System.Drawing.Size(121, 27);
             this.cb_birim.TabIndex = 18;
@@ -187,9 +195,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Location = new System.Drawing.Point(255, 74);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 20);
+            this.label5.Size = new System.Drawing.Size(47, 19);
             this.label5.TabIndex = 1;
             this.label5.Text = "Birim";
             // 
@@ -224,7 +234,7 @@
             // 
             // nud_gram
             // 
-            this.nud_gram.Location = new System.Drawing.Point(397, 95);
+            this.nud_gram.Location = new System.Drawing.Point(397, 99);
             this.nud_gram.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -243,7 +253,7 @@
             this.btn_kaydet.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
             this.btn_kaydet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btn_kaydet.Image = global::CaloriMeter.UI.Properties.Resources.kayit32x32;
-            this.btn_kaydet.Location = new System.Drawing.Point(537, 311);
+            this.btn_kaydet.Location = new System.Drawing.Point(537, 411);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(116, 41);
             this.btn_kaydet.TabIndex = 16;
@@ -256,6 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(89)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(723, 510);
             this.Controls.Add(this.nud_gram);
             this.Controls.Add(this.btn_delete);

@@ -51,12 +51,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_harcanacakKalori = new System.Windows.Forms.Label();
             this.lbl_kalanBilgiText = new System.Windows.Forms.Label();
             this.lbl_gunlukKalori = new System.Windows.Forms.Label();
             this.pb_kalanKalori = new System.Windows.Forms.ProgressBar();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lbl_harcanacakKalori = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,7 +68,7 @@
             this.txt_hosgeldinMesaj.AutoSize = true;
             this.txt_hosgeldinMesaj.BackColor = System.Drawing.Color.Transparent;
             this.txt_hosgeldinMesaj.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_hosgeldinMesaj.Location = new System.Drawing.Point(260, 53);
+            this.txt_hosgeldinMesaj.Location = new System.Drawing.Point(215, 53);
             this.txt_hosgeldinMesaj.Name = "txt_hosgeldinMesaj";
             this.txt_hosgeldinMesaj.Size = new System.Drawing.Size(126, 26);
             this.txt_hosgeldinMesaj.TabIndex = 0;
@@ -140,7 +140,7 @@
             this.btn_ogunEkle.Name = "btn_ogunEkle";
             this.btn_ogunEkle.Size = new System.Drawing.Size(200, 42);
             this.btn_ogunEkle.TabIndex = 6;
-            this.btn_ogunEkle.Text = "Öğün Ekle";
+            this.btn_ogunEkle.Text = "Öğünlerim";
             this.btn_ogunEkle.UseVisualStyleBackColor = false;
             this.btn_ogunEkle.Click += new System.EventHandler(this.btn_ogunEkle_Click);
             // 
@@ -165,7 +165,7 @@
             this.lbl_personName.BackColor = System.Drawing.Color.Transparent;
             this.lbl_personName.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_personName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_personName.Location = new System.Drawing.Point(261, 110);
+            this.lbl_personName.Location = new System.Drawing.Point(216, 110);
             this.lbl_personName.Name = "lbl_personName";
             this.lbl_personName.Size = new System.Drawing.Size(91, 19);
             this.lbl_personName.TabIndex = 0;
@@ -334,6 +334,15 @@
             this.panel3.Size = new System.Drawing.Size(688, 156);
             this.panel3.TabIndex = 7;
             // 
+            // lbl_harcanacakKalori
+            // 
+            this.lbl_harcanacakKalori.AutoSize = true;
+            this.lbl_harcanacakKalori.Location = new System.Drawing.Point(310, 81);
+            this.lbl_harcanacakKalori.Name = "lbl_harcanacakKalori";
+            this.lbl_harcanacakKalori.Size = new System.Drawing.Size(93, 20);
+            this.lbl_harcanacakKalori.TabIndex = 2;
+            this.lbl_harcanacakKalori.Text = "kalori bilgi--";
+            // 
             // lbl_kalanBilgiText
             // 
             this.lbl_kalanBilgiText.AutoSize = true;
@@ -381,15 +390,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Aktivite durumu, fiziksel özellikler dikkate alınarak hesaplanan, günlük minimum " +
     "harcanan kalori miktarıdır.";
-            // 
-            // lbl_harcanacakKalori
-            // 
-            this.lbl_harcanacakKalori.AutoSize = true;
-            this.lbl_harcanacakKalori.Location = new System.Drawing.Point(310, 81);
-            this.lbl_harcanacakKalori.Name = "lbl_harcanacakKalori";
-            this.lbl_harcanacakKalori.Size = new System.Drawing.Size(93, 20);
-            this.lbl_harcanacakKalori.TabIndex = 2;
-            this.lbl_harcanacakKalori.Text = "kalori bilgi--";
             // 
             // UserLogin
             // 

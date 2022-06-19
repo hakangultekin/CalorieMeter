@@ -155,23 +155,9 @@ namespace CaloriMeter.UI.Views.UserForms
             MessageBox.Show(aciklama, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnAnasayfa_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            UserLogin userLogin = (UserLogin)this.Owner;
-            userLogin.ShowMainForm();
             this.Close();
-        }
-
-        private void btn_ogunEkle_Click(object sender, EventArgs e)
-        {
-            UserLogin userLogin = (UserLogin)this.Owner;
-            this.Close();
-            userLogin.OgunEkleAc();
-        }
-
-        private void UpdateInfo_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Application.Exit();
         }
     }
 }

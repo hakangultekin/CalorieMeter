@@ -126,5 +126,10 @@ namespace CaloriMeter.UI.Views.UserForms
             lbl_ybrARK.Text = araKalori.ToString();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
