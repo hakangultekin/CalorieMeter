@@ -33,8 +33,6 @@ namespace CaloriMeter.UI.Views.AdminForms
 
         private void AdminCategoriesandFoods_Load(object sender, EventArgs e)
         {
-
-
             foreach (var item in context.Foods.Join(context.Categories, f => f.CategoryID, c => c.CategoryID, (f, c) => new { c.Name, FoodName = f.Name, f.Per100Cal, f.PortionSize }))
             {
                 ListViewItem lvi = new ListViewItem();
@@ -59,28 +57,7 @@ namespace CaloriMeter.UI.Views.AdminForms
 
 
             //}
-            //List<Food> foodInfo = new List<Food>(cat, fo, cal, gram);
-
-            //foreach (var item in foodInfo)
-            //{
-            //    ListViewItem lvitem = new ListViewItem();
-
-            //    lvitem.Text = category.Name;
-            //    lvitem.SubItems.Add(food.Name);
-            //    lvitem.SubItems.Add(food.Per100Cal.ToString());
-            //    lvitem.SubItems.Add(food.Grams.ToString());
-            //    lvitem.Tag = item;
-            //    //lvListe.Items.Add(lvitem);
-
-            //}
-            //context.Foods.Add(arr);
-
-
-
-
-
-
-
+           
 
         }
     }
