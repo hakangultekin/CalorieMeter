@@ -31,7 +31,7 @@ namespace CaloriMeter.DAL.Repositories
         /// <returns></returns>
         public List<Food> GetAllByUser(int userid)
         {
-            return db.Foods.Where(x => x.UserID == 1 && x.UserID == userid && x.State == true).ToList();
+            return db.Foods.Where(x => x.UserID == 1 || x.UserID == userid && x.State == true).ToList();
         }
 
         public List<Food> FindFood(string word)
@@ -41,7 +41,7 @@ namespace CaloriMeter.DAL.Repositories
 
         public List<Food> FindFoodByUser(int userid ,string word)
         {
-            return db.Foods.Where(x => x.Name.Contains(word) && x.UserID == 1 && x.UserID == userid && x.State == true).ToList();
+            return db.Foods.Where(x => x.Name.Contains(word) && (x.UserID == 1 || x.UserID == userid) && x.State == true).ToList();
         }
 
         public Food FindFoodByID(int id)
