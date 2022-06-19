@@ -19,7 +19,7 @@ namespace CaloriMeter.UI.Views.UserForms
         UserService userService;
         MealService mealService;
         UpdateInfo ui;
-        Meals me;
+        MyMeals myMeals;
         Statistics stats;
         public UserLogin()
         {
@@ -158,10 +158,10 @@ namespace CaloriMeter.UI.Views.UserForms
 
         public void btn_ogunEkle_Click(object sender, EventArgs e)
         {
-            me = new Meals();
-            me.Owner = this;
+            myMeals = new MyMeals(user.UserID);
+            myMeals.Owner = this;
             this.Hide();
-            me.ShowDialog();
+            myMeals.ShowDialog();
             this.Show();
         }
 

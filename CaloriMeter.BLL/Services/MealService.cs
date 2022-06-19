@@ -16,6 +16,12 @@ namespace CaloriMeter.BLL.Services
             mealRepository = new MealRepository();
         }
 
+        public Meal GetMealByID(int id)
+        {
+            if (id < 0) throw new Exception("Meal id hatalı");
+            return mealRepository.GetMealByID(id);
+        }
+
         public List<Meal> GetAll()
         {
             return mealRepository.GetAll();
@@ -100,6 +106,8 @@ namespace CaloriMeter.BLL.Services
 
         void MealDetailControl(ICollection<MealDetail> mealDetails)
         {
+            if (mealDetails.Count == 0) throw new Exception("Öğün detayı girişi yapılmamış ! ");
+
             foreach (MealDetail item in mealDetails)
             {
                 if (item.FoodID <= 0) throw new Exception("Food girişi hatalı.");

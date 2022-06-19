@@ -63,6 +63,16 @@ namespace CaloriMeter.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addicon32x32 {
+            get {
+                object obj = ResourceManager.GetObject("addicon32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bggray {
             get {
                 object obj = ResourceManager.GetObject("bggray", resourceCulture);
@@ -96,6 +106,36 @@ namespace CaloriMeter.UI.Properties {
         internal static System.Drawing.Bitmap Clouds {
             get {
                 object obj = ResourceManager.GetObject("Clouds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_red24x24 {
+            get {
+                object obj = ResourceManager.GetObject("delete-red24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_red32x32 {
+            get {
+                object obj = ResourceManager.GetObject("delete-red32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit32x32 {
+            get {
+                object obj = ResourceManager.GetObject("edit32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +186,16 @@ namespace CaloriMeter.UI.Properties {
         internal static System.Drawing.Bitmap MicrosoftTeams_image {
             get {
                 object obj = ResourceManager.GetObject("MicrosoftTeams_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search32x32 {
+            get {
+                object obj = ResourceManager.GetObject("search32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -59,9 +59,9 @@
     <Compile Include="EntityConfigurations\MealConfiguration.cs" />
     <Compile Include="EntityConfigurations\MealTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
-    <Compile Include="Migrations\202206182112248_firstdb.cs" />
-    <Compile Include="Migrations\202206182112248_firstdb.designer.cs">
-      <DependentUpon>202206182112248_firstdb.cs</DependentUpon>
+    <Compile Include="Migrations\202206191015491_firstcommit.cs" />
+    <Compile Include="Migrations\202206191015491_firstcommit.designer.cs">
+      <DependentUpon>202206191015491_firstcommit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +69,7 @@
     <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Repositories\FoodRepository.cs" />
     <Compile Include="Repositories\MealRepository.cs" />
+    <Compile Include="Repositories\MealTypeRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="SeedConfigurations\ActivityTypeSeed.cs" />
     <Compile Include="SeedConfigurations\AdminSeed.cs" />
@@ -87,8 +88,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206182112248_firstdb.resx">
-      <DependentUpon>202206182112248_firstdb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206191015491_firstcommit.resx">
+      <DependentUpon>202206191015491_firstcommit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

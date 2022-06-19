@@ -44,6 +44,11 @@ namespace CaloriMeter.DAL.Repositories
             return db.Foods.Where(x => x.Name.Contains(word) && x.UserID == 1 && x.UserID == userid && x.State == true).ToList();
         }
 
+        public Food FindFoodByID(int id)
+        {
+            return db.Foods.Find(id);
+        }
+
         public bool Insert(Food food)
         {
             db.Foods.Add(food);

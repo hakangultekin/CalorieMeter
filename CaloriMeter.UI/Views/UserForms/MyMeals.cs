@@ -40,14 +40,15 @@ namespace CaloriMeter.UI.Views.UserForms
 
         private void MyMeals_Load(object sender, EventArgs e)
         {
-            FillMeals();
-        }
-
-        void FillMeals()
-        {
             mealService = new MealService();
             List<Meal> meals = mealService.GetUserMeals(userid);
+            FillMeals(meals);
+            dtp_baslangic.Value = DateTime.Today;
+            dtp_bitis.Value = DateTime.Today;
+        }
 
+        void FillMeals(List<Meal> meals)
+        {
             if (meals.Count > 0)
             {
                 lst_meals.Items.Clear();
@@ -60,6 +61,56 @@ namespace CaloriMeter.UI.Views.UserForms
                     lvi.Tag = item;
                     lst_meals.Items.Add(lvi);
                 }
+            }
+        }
+
+        private void btn_ogunAra_Click(object sender, EventArgs e)
+        {
+            mealService = new MealService();
+            List<Meal> meals = mealService.GetUserMeals(userid, dtp_baslangic.Value, dtp_bitis.Value);
+            FillMeals(meals);
+        }
+
+        private void lst_meals_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lst_meals.SelectedItems.Count > 0 && lst_meals.SelectedItems[0].Index > -1)
+            {
+                lst_ogunDetay.Items.Clear();
+                Meal selectedMeal = (Meal)lst_meals.SelectedItems[0].Tag;
+                foreach (MealDetail item in selectedMeal.MealDetails)
+                {
+                    ListViewItem lvi = new ListViewItem(selectedMeal.MealType.MealTypeName);
+                    lvi.SubItems.Add(item.Food.Name);
+                    lvi.SubItems.Add(item.Grams.ToString());
+                    lvi.SubItems.Add(item.Calory.ToString());
+                    lvi.Tag = item;
+                    lst_ogunDetay.Items.Add(lvi);
+                }
+            }
+        }
+
+        private void btn_ekle_Click(object sender, EventArgs e)
+        {
+            AddMeal addMeal = new AddMeal(userid);
+            addMeal.ShowDialog();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            if (lst_meals.SelectedItems.Count > 0 && lst_meals.SelectedItems[0].Index > -1)
+            {
+                AddMeal addMeal = new AddMeal((Meal)lst_meals.SelectedItems[0].Tag);
+                addMeal.ShowDialog();
+            }
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            if (lst_meals.SelectedItems.Count > 0 && lst_meals.SelectedItems[0].Index > -1)
+            {
+                Meal meal = (Meal)lst_meals.SelectedItems[0].Tag;
+                mealService.Delete(meal.MealID);
+                FillMeals(mealService.GetUserMeals(userid));
             }
         }
     }

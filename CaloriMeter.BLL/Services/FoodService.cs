@@ -56,6 +56,12 @@ namespace CaloriMeter.BLL.Services
             return foodRepository.FindFoodByUser(userid, word);
         }
 
+        public Food FindFoodByID(int id)
+        {
+            if (id < 0) throw new Exception("Food id hatalı");
+            return foodRepository.FindFoodByID(id);
+        }
+
         /// <summary>
         /// Yeni yemek ekler.
         /// </summary>

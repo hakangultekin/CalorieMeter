@@ -15,6 +15,11 @@ namespace CaloriMeter.DAL.Repositories
             db = new CalorieMeterDbContext();
         }
 
+        public Meal GetMealByID(int id)
+        {
+            return db.Meals.Find(id);
+        }
+
         public List<Meal> GetAll()
         {
             return db.Meals.Where(x => x.State ==true).ToList();
@@ -59,6 +64,18 @@ namespace CaloriMeter.DAL.Repositories
 
         public bool Insert(Meal entity)
         {
+            //Meal meal = new Meal() { };
+            //meal.RegisterationDate = entity.RegisterationDate;
+            //meal.UserID = entity.UserID;
+            //meal.MealTypeID = entity.MealTypeID;
+            //meal.State = entity.State;
+
+            //Meal newMeal = db.Meals.Add(meal);
+            //int affRows = db.SaveChanges();
+
+            //newMeal.MealDetails = entity.MealDetails;
+            //affRows = db.SaveChanges();
+
             db.Meals.Add(entity);
             int affRows = db.SaveChanges();
             return affRows > 0;
@@ -68,6 +85,7 @@ namespace CaloriMeter.DAL.Repositories
         {
             Meal updatedMeal = db.Meals.SingleOrDefault(x => x.MealID == entity.MealID);
             updatedMeal = entity;
+
             int affRows = db.SaveChanges();
             return affRows > 0;
         }
