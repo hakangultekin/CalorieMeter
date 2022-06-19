@@ -18,8 +18,8 @@ namespace CaloriMeter.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
-            Application.Run(new UserLogin());
+            Application.Run(new LoginForm());
+            //Application.Run(new UserLogin());
         }
     }
 }

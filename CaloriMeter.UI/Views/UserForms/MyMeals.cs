@@ -129,5 +129,10 @@ namespace CaloriMeter.UI.Views.UserForms
                 FillMeals(mealService.GetUserMeals(userid));
             }
         }
+
+        private void MyMeals_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

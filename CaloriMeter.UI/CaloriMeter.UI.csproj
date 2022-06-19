@@ -94,12 +94,6 @@
     <Compile Include="Views\UserForms\AddMeal.Designer.cs">
       <DependentUpon>AddMeal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserForms\Meals.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\UserForms\Meals.Designer.cs">
-      <DependentUpon>Meals.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\UserForms\MealSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,9 +157,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserForms\AddMeal.resx">
       <DependentUpon>AddMeal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\UserForms\Meals.resx">
-      <DependentUpon>Meals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserForms\MealSearch.resx">
       <DependentUpon>MealSearch.cs</DependentUpon>

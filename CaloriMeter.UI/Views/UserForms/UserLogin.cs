@@ -30,14 +30,14 @@ namespace CaloriMeter.UI.Views.UserForms
         {
             InitializeComponent();
             this.Paint += new PaintEventHandler(set_background);
-            //user = _user;
+            user = _user;
         }
 
         private void BilgileriGetir()
         {
             userService = new UserService();
             mealService = new MealService();
-            user = userService.GetUserById(1);
+            user = userService.GetUserById(user.UserID);
 
             lbl_personName.Text = $"Hoşgeldiniz {user.Name} {user.LastName}";
             lblMevcutKilo.Text = user.Weight.ToString() + " kg";
@@ -52,6 +52,28 @@ namespace CaloriMeter.UI.Views.UserForms
             lblEndeks.Text = vki.ToString("N");
             lbl_endeksDurum.Text = EndeksDurumVer(vki);
             lbl_gunlukKalori.Text = GunlukKaloriHesapla(user).ToString();
+
+            DateTime today = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+            List<Meal> bugununOgunleri = mealService.GetUserMeals(user.UserID, today, today.AddDays(1));
+            int gunlukTuketilenKalori = bugununOgunleri.Sum(a => a.MealDetails.Sum(b => b.Calory));
+            int gunlukStandartKalori = Convert.ToInt32(GunlukKaloriHesapla(user));
+
+            if (user.Weight > user.KiloGoal)
+                lbl_kalanBilgiText.Text = "Günlük Kalan Kalori";
+            else
+                lbl_kalanBilgiText.Text = "Hedef Kalori";
+
+            if (gunlukTuketilenKalori > gunlukStandartKalori)
+            {
+                pb_kalanKalori.Value = 100;
+                lbl_harcanacakKalori.Text = "0 kcal";
+            }
+            else
+            {
+                pb_kalanKalori.Maximum = gunlukStandartKalori;
+                pb_kalanKalori.Value = gunlukTuketilenKalori;
+                lbl_harcanacakKalori.Text = (gunlukStandartKalori - gunlukTuketilenKalori).ToString();
+            }
 
         }
 
@@ -142,36 +164,48 @@ namespace CaloriMeter.UI.Views.UserForms
             BilgileriGetir();
         }
 
-        public void btnAnasayfa_Click(object sender, EventArgs e)
+        private void btnAnasayfa_Click(object sender, EventArgs e)
+        {
+            ShowMainForm();
+        }
+
+        public void ShowMainForm()
         {
             this.Show();
         }
 
         public void btn_bilgiGuncelle_click(object sender, EventArgs e)
         {
-            ui = new UpdateInfo(user);
+            if (ui == null) ui = new UpdateInfo(user);
             ui.Owner = this;
             this.Hide();
             ui.ShowDialog();
-            this.Show();
         }
 
-        public void btn_ogunEkle_Click(object sender, EventArgs e)
+        private void btn_ogunEkle_Click(object sender, EventArgs e)
         {
-            myMeals = new MyMeals(user.UserID);
+            OgunEkleAc();
+        }
+
+        public void OgunEkleAc()
+        {
+            if (myMeals == null) myMeals = new MyMeals(user.UserID);
             myMeals.Owner = this;
             this.Hide();
             myMeals.ShowDialog();
-            this.Show();
         }
 
-        public void btn_istatistikler_Click(object sender, EventArgs e)
+        private void btn_istatistikler_Click(object sender, EventArgs e)
         {
-            stats = new Statistics();
+            IstatistikShow();
+        }
+
+        public void IstatistikShow()
+        {
+            if (stats == null) stats = new Statistics(user.UserID);
             stats.Owner = this;
             this.Hide();
             stats.ShowDialog();
-            this.Show();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

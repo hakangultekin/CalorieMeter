@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_istatistikler = new System.Windows.Forms.Button();
-            this.btn_ogunEkle = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAnasayfa = new System.Windows.Forms.Button();
             this.lst_meals = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,90 +47,15 @@
             this.btn_ekle = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_ogunAra = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_istatistikler = new System.Windows.Forms.Button();
+            this.btn_ogunEkle = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAnasayfa = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(89)))), ((int)(((byte)(86)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btn_istatistikler);
-            this.panel1.Controls.Add(this.btn_ogunEkle);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnAnasayfa);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 658);
-            this.panel1.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CaloriMeter.UI.Properties.Resources.caloriemeterlogowhite;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_istatistikler
-            // 
-            this.btn_istatistikler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(240)))), ((int)(((byte)(197)))));
-            this.btn_istatistikler.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_istatistikler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_istatistikler.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_istatistikler.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
-            this.btn_istatistikler.Location = new System.Drawing.Point(0, 264);
-            this.btn_istatistikler.Name = "btn_istatistikler";
-            this.btn_istatistikler.Size = new System.Drawing.Size(160, 42);
-            this.btn_istatistikler.TabIndex = 7;
-            this.btn_istatistikler.Text = "İstatistikler";
-            this.btn_istatistikler.UseVisualStyleBackColor = false;
-            // 
-            // btn_ogunEkle
-            // 
-            this.btn_ogunEkle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_ogunEkle.Enabled = false;
-            this.btn_ogunEkle.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_ogunEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ogunEkle.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ogunEkle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
-            this.btn_ogunEkle.Location = new System.Drawing.Point(0, 223);
-            this.btn_ogunEkle.Name = "btn_ogunEkle";
-            this.btn_ogunEkle.Size = new System.Drawing.Size(160, 42);
-            this.btn_ogunEkle.TabIndex = 6;
-            this.btn_ogunEkle.Text = "Öğün Ekle";
-            this.btn_ogunEkle.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(240)))), ((int)(((byte)(197)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
-            this.button1.Location = new System.Drawing.Point(0, 184);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 42);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Bilgilerimi Güncelle";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnAnasayfa
-            // 
-            this.btnAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(240)))), ((int)(((byte)(197)))));
-            this.btnAnasayfa.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnasayfa.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAnasayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
-            this.btnAnasayfa.Location = new System.Drawing.Point(0, 144);
-            this.btnAnasayfa.Name = "btnAnasayfa";
-            this.btnAnasayfa.Size = new System.Drawing.Size(160, 42);
-            this.btnAnasayfa.TabIndex = 4;
-            this.btnAnasayfa.Text = "Ana Sayfa";
-            this.btnAnasayfa.UseVisualStyleBackColor = false;
             // 
             // lst_meals
             // 
@@ -148,10 +67,10 @@
             this.lst_meals.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.lst_meals.FullRowSelect = true;
             this.lst_meals.HideSelection = false;
-            this.lst_meals.Location = new System.Drawing.Point(174, 144);
+            this.lst_meals.Location = new System.Drawing.Point(222, 143);
             this.lst_meals.MultiSelect = false;
             this.lst_meals.Name = "lst_meals";
-            this.lst_meals.Size = new System.Drawing.Size(549, 193);
+            this.lst_meals.Size = new System.Drawing.Size(549, 207);
             this.lst_meals.TabIndex = 10;
             this.lst_meals.UseCompatibleStateImageBehavior = false;
             this.lst_meals.View = System.Windows.Forms.View.Details;
@@ -181,7 +100,7 @@
             // 
             this.dtp_baslangic.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.dtp_baslangic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_baslangic.Location = new System.Drawing.Point(413, 113);
+            this.dtp_baslangic.Location = new System.Drawing.Point(461, 112);
             this.dtp_baslangic.Name = "dtp_baslangic";
             this.dtp_baslangic.Size = new System.Drawing.Size(109, 25);
             this.dtp_baslangic.TabIndex = 11;
@@ -190,7 +109,7 @@
             // 
             this.dtp_bitis.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.dtp_bitis.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_bitis.Location = new System.Drawing.Point(551, 113);
+            this.dtp_bitis.Location = new System.Drawing.Point(599, 112);
             this.dtp_bitis.Name = "dtp_bitis";
             this.dtp_bitis.Size = new System.Drawing.Size(109, 25);
             this.dtp_bitis.TabIndex = 11;
@@ -200,7 +119,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.label1.Location = new System.Drawing.Point(409, 90);
+            this.label1.Location = new System.Drawing.Point(457, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 17);
             this.label1.TabIndex = 13;
@@ -211,7 +130,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.label2.Location = new System.Drawing.Point(547, 90);
+            this.label2.Location = new System.Drawing.Point(595, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 17);
             this.label2.TabIndex = 13;
@@ -225,9 +144,9 @@
             this.columnHeader7,
             this.columnHeader8});
             this.lst_ogunDetay.HideSelection = false;
-            this.lst_ogunDetay.Location = new System.Drawing.Point(174, 388);
+            this.lst_ogunDetay.Location = new System.Drawing.Point(222, 387);
             this.lst_ogunDetay.Name = "lst_ogunDetay";
-            this.lst_ogunDetay.Size = new System.Drawing.Size(549, 175);
+            this.lst_ogunDetay.Size = new System.Drawing.Size(549, 227);
             this.lst_ogunDetay.TabIndex = 14;
             this.lst_ogunDetay.UseCompatibleStateImageBehavior = false;
             this.lst_ogunDetay.View = System.Windows.Forms.View.Details;
@@ -258,7 +177,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.label3.Location = new System.Drawing.Point(170, 365);
+            this.label3.Location = new System.Drawing.Point(218, 364);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 19);
             this.label3.TabIndex = 15;
@@ -270,7 +189,7 @@
             this.btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delete.Image = global::CaloriMeter.UI.Properties.Resources.delete_red32x32;
-            this.btn_delete.Location = new System.Drawing.Point(729, 223);
+            this.btn_delete.Location = new System.Drawing.Point(777, 222);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(55, 42);
             this.btn_delete.TabIndex = 12;
@@ -285,7 +204,7 @@
             this.btn_ekle.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
             this.btn_ekle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btn_ekle.Image = global::CaloriMeter.UI.Properties.Resources.addicon32x32;
-            this.btn_ekle.Location = new System.Drawing.Point(174, 96);
+            this.btn_ekle.Location = new System.Drawing.Point(222, 95);
             this.btn_ekle.Name = "btn_ekle";
             this.btn_ekle.Size = new System.Drawing.Size(126, 42);
             this.btn_ekle.TabIndex = 12;
@@ -300,7 +219,7 @@
             this.btn_edit.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_edit.Image = global::CaloriMeter.UI.Properties.Resources.edit32x32;
-            this.btn_edit.Location = new System.Drawing.Point(729, 173);
+            this.btn_edit.Location = new System.Drawing.Point(777, 172);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(55, 42);
             this.btn_edit.TabIndex = 12;
@@ -313,18 +232,100 @@
             this.btn_ogunAra.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btn_ogunAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ogunAra.Image = global::CaloriMeter.UI.Properties.Resources.search32x32;
-            this.btn_ogunAra.Location = new System.Drawing.Point(668, 96);
+            this.btn_ogunAra.Location = new System.Drawing.Point(716, 95);
             this.btn_ogunAra.Name = "btn_ogunAra";
             this.btn_ogunAra.Size = new System.Drawing.Size(55, 42);
             this.btn_ogunAra.TabIndex = 12;
             this.btn_ogunAra.UseVisualStyleBackColor = false;
             this.btn_ogunAra.Click += new System.EventHandler(this.btn_ogunAra_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(89)))), ((int)(((byte)(86)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btn_istatistikler);
+            this.panel1.Controls.Add(this.btn_ogunEkle);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnAnasayfa);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 646);
+            this.panel1.TabIndex = 16;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CaloriMeter.UI.Properties.Resources.caloriemeterlogowhite;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_istatistikler
+            // 
+            this.btn_istatistikler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(240)))), ((int)(((byte)(197)))));
+            this.btn_istatistikler.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_istatistikler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_istatistikler.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_istatistikler.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
+            this.btn_istatistikler.Location = new System.Drawing.Point(0, 264);
+            this.btn_istatistikler.Name = "btn_istatistikler";
+            this.btn_istatistikler.Size = new System.Drawing.Size(200, 42);
+            this.btn_istatistikler.TabIndex = 7;
+            this.btn_istatistikler.Text = "İstatistikler";
+            this.btn_istatistikler.UseVisualStyleBackColor = false;
+            // 
+            // btn_ogunEkle
+            // 
+            this.btn_ogunEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(240)))), ((int)(((byte)(197)))));
+            this.btn_ogunEkle.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_ogunEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ogunEkle.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ogunEkle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
+            this.btn_ogunEkle.Location = new System.Drawing.Point(0, 223);
+            this.btn_ogunEkle.Name = "btn_ogunEkle";
+            this.btn_ogunEkle.Size = new System.Drawing.Size(200, 42);
+            this.btn_ogunEkle.TabIndex = 6;
+            this.btn_ogunEkle.Text = "Öğün Ekle";
+            this.btn_ogunEkle.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Enabled = false;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
+            this.button1.Location = new System.Drawing.Point(0, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 42);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Bilgilerimi Güncelle";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnAnasayfa
+            // 
+            this.btnAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(240)))), ((int)(((byte)(197)))));
+            this.btnAnasayfa.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAnasayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnasayfa.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnasayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(77)))), ((int)(((byte)(71)))));
+            this.btnAnasayfa.Location = new System.Drawing.Point(0, 144);
+            this.btnAnasayfa.Name = "btnAnasayfa";
+            this.btnAnasayfa.Size = new System.Drawing.Size(200, 42);
+            this.btnAnasayfa.TabIndex = 4;
+            this.btnAnasayfa.Text = "Ana Sayfa";
+            this.btnAnasayfa.UseVisualStyleBackColor = false;
+            // 
             // MyMeals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 658);
+            this.ClientSize = new System.Drawing.Size(842, 646);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lst_ogunDetay);
             this.Controls.Add(this.label2);
@@ -336,12 +337,12 @@
             this.Controls.Add(this.dtp_bitis);
             this.Controls.Add(this.dtp_baslangic);
             this.Controls.Add(this.lst_meals);
-            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MyMeals";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyMeals";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MyMeals_FormClosed);
             this.Load += new System.EventHandler(this.MyMeals_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -351,13 +352,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_istatistikler;
-        private System.Windows.Forms.Button btn_ogunEkle;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAnasayfa;
         private System.Windows.Forms.ListView lst_meals;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -377,5 +371,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_ekle;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_istatistikler;
+        private System.Windows.Forms.Button btn_ogunEkle;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAnasayfa;
     }
 }

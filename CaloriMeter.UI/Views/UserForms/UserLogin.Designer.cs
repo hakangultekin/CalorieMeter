@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.txt_hosgeldinMesaj = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblKalan = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_gunlukKalori = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnAnasayfa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,10 +50,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_kalanBilgiText = new System.Windows.Forms.Label();
+            this.lbl_gunlukKalori = new System.Windows.Forms.Label();
+            this.pb_kalanKalori = new System.Windows.Forms.ProgressBar();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_harcanacakKalori = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_hosgeldinMesaj
@@ -72,63 +73,6 @@
             this.txt_hosgeldinMesaj.Size = new System.Drawing.Size(126, 26);
             this.txt_hosgeldinMesaj.TabIndex = 0;
             this.txt_hosgeldinMesaj.Text = "Hoşgeldiniz";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(62, 160);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(345, 35);
-            this.progressBar1.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblKalan);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.lbl_gunlukKalori);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.progressBar1);
-            this.groupBox2.Location = new System.Drawing.Point(238, 442);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(628, 233);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kalori";
-            // 
-            // lblKalan
-            // 
-            this.lblKalan.AutoSize = true;
-            this.lblKalan.Location = new System.Drawing.Point(123, 118);
-            this.lblKalan.Name = "lblKalan";
-            this.lblKalan.Size = new System.Drawing.Size(47, 20);
-            this.lblKalan.TabIndex = 0;
-            this.lblKalan.Text = "Kalan";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(58, 118);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 20);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Kalan";
-            // 
-            // lbl_gunlukKalori
-            // 
-            this.lbl_gunlukKalori.AutoSize = true;
-            this.lbl_gunlukKalori.Location = new System.Drawing.Point(174, 58);
-            this.lbl_gunlukKalori.Name = "lbl_gunlukKalori";
-            this.lbl_gunlukKalori.Size = new System.Drawing.Size(108, 20);
-            this.lbl_gunlukKalori.TabIndex = 0;
-            this.lbl_gunlukKalori.Text = "Günlük Kalori :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(58, 58);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Günlük Kalori :";
             // 
             // btnAnasayfa
             // 
@@ -157,7 +101,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 841);
+            this.panel1.Size = new System.Drawing.Size(200, 721);
             this.panel1.TabIndex = 5;
             // 
             // pictureBox1
@@ -376,14 +320,85 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Vücut Kitle Endeksi :";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.lbl_harcanacakKalori);
+            this.panel3.Controls.Add(this.lbl_kalanBilgiText);
+            this.panel3.Controls.Add(this.lbl_gunlukKalori);
+            this.panel3.Controls.Add(this.pb_kalanKalori);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Location = new System.Drawing.Point(200, 433);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(688, 156);
+            this.panel3.TabIndex = 7;
+            // 
+            // lbl_kalanBilgiText
+            // 
+            this.lbl_kalanBilgiText.AutoSize = true;
+            this.lbl_kalanBilgiText.Location = new System.Drawing.Point(310, 58);
+            this.lbl_kalanBilgiText.Name = "lbl_kalanBilgiText";
+            this.lbl_kalanBilgiText.Size = new System.Drawing.Size(93, 20);
+            this.lbl_kalanBilgiText.TabIndex = 2;
+            this.lbl_kalanBilgiText.Text = "kalori bilgi--";
+            // 
+            // lbl_gunlukKalori
+            // 
+            this.lbl_gunlukKalori.AutoSize = true;
+            this.lbl_gunlukKalori.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_gunlukKalori.Location = new System.Drawing.Point(209, 14);
+            this.lbl_gunlukKalori.Name = "lbl_gunlukKalori";
+            this.lbl_gunlukKalori.Size = new System.Drawing.Size(21, 19);
+            this.lbl_gunlukKalori.TabIndex = 4;
+            this.lbl_gunlukKalori.Text = "--";
+            // 
+            // pb_kalanKalori
+            // 
+            this.pb_kalanKalori.Location = new System.Drawing.Point(20, 81);
+            this.pb_kalanKalori.Name = "pb_kalanKalori";
+            this.pb_kalanKalori.Size = new System.Drawing.Size(264, 20);
+            this.pb_kalanKalori.TabIndex = 13;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label9.Location = new System.Drawing.Point(16, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(183, 19);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Günlük Harcanan Kalori :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(17, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(566, 16);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Aktivite durumu, fiziksel özellikler dikkate alınarak hesaplanan, günlük minimum " +
+    "harcanan kalori miktarıdır.";
+            // 
+            // lbl_harcanacakKalori
+            // 
+            this.lbl_harcanacakKalori.AutoSize = true;
+            this.lbl_harcanacakKalori.Location = new System.Drawing.Point(310, 81);
+            this.lbl_harcanacakKalori.Name = "lbl_harcanacakKalori";
+            this.lbl_harcanacakKalori.Size = new System.Drawing.Size(93, 20);
+            this.lbl_harcanacakKalori.TabIndex = 2;
+            this.lbl_harcanacakKalori.Text = "kalori bilgi--";
+            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 841);
+            this.ClientSize = new System.Drawing.Size(878, 721);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lbl_personName);
             this.Controls.Add(this.txt_hosgeldinMesaj);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -393,12 +408,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserLogin";
             this.Load += new System.EventHandler(this.UserLogin_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,19 +422,13 @@
         #endregion
 
         private System.Windows.Forms.Label txt_hosgeldinMesaj;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAnasayfa;
-        private System.Windows.Forms.Label lblKalan;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_istatistikler;
         private System.Windows.Forms.Button btn_ogunEkle;
         private System.Windows.Forms.Button btn_bilgiGuncelle;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_personName;
-        private System.Windows.Forms.Label lbl_gunlukKalori;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -434,5 +443,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbl_kalanBilgiText;
+        private System.Windows.Forms.Label lbl_gunlukKalori;
+        private System.Windows.Forms.Label lbl_harcanacakKalori;
+        private System.Windows.Forms.ProgressBar pb_kalanKalori;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label5;
     }
 }

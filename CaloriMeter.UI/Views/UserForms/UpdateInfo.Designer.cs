@@ -528,6 +528,7 @@
             this.Name = "UpdateInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateInfo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateInfo_FormClosed);
             this.Load += new System.EventHandler(this.UpdateInfo_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

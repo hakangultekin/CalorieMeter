@@ -9,7 +9,7 @@ namespace CaloriMeter.Model.Entitites
     public class MealDetail
     {
         public int MealDetailID { get; set; }
-        public int MealID { get; set; }
+        public int? MealID { get; set; }
         public int FoodID { get; set; }
         public int Calory { get; set; }
         public int Grams { get; set; }

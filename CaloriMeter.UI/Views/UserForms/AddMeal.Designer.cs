@@ -256,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 652);
+            this.ClientSize = new System.Drawing.Size(723, 510);
             this.Controls.Add(this.nud_gram);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.cb_birim);

@@ -40,6 +40,7 @@ namespace CaloriMeter.UI.Views.UserForms
                 ListViewItem lvi = new ListViewItem(item.Name);
                 lvi.SubItems.Add(item.Per100Cal.ToString());
                 lvi.SubItems.Add(item.Grams.ToString());
+                lvi.SubItems.Add(item.Category.Name);
                 lvi.Tag = item;
                 listView1.Items.Add(lvi);
             }
