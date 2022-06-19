@@ -43,11 +43,11 @@ namespace CaloriMeter.UI.Views.UserForms
             mealService = new MealService();
             userService = new UserService();
             foodService = new FoodService();
-            userid = _meal.UserID;
             myMeal = mealService.GetMealByID(_meal.MealID);
+            userid = myMeal.UserID;
 
-            EditMealTypes();
             UrunluAcilis(myMeal);
+            EditMealTypes();
             this.Paint += new PaintEventHandler(set_background);
         }
 
@@ -85,7 +85,7 @@ namespace CaloriMeter.UI.Views.UserForms
 
         private void AddMeal_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cb_mealTypes_SelectedIndexChanged(object sender, EventArgs e)
@@ -155,7 +155,9 @@ namespace CaloriMeter.UI.Views.UserForms
                 else
                     food = foodService.FindFoodByID(secilenFood.FoodID);
 
-                ListViewItem lvi = new ListViewItem(cb_mealTypes.Text);
+                string baslik = myMeal.MealType == null ? cb_mealTypes.Text : myMeal.MealType.MealTypeName;
+
+                ListViewItem lvi = new ListViewItem(baslik);
                 lvi.SubItems.Add(food.Name);
                 lvi.SubItems.Add(item.Grams.ToString());
                 lvi.SubItems.Add(item.Calory.ToString());

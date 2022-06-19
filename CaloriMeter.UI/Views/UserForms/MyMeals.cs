@@ -49,12 +49,12 @@ namespace CaloriMeter.UI.Views.UserForms
 
         void FillMeals(List<Meal> meals)
         {
+            lst_meals.Items.Clear();
             if (meals.Count > 0)
             {
-                lst_meals.Items.Clear();
                 foreach (Meal item in meals)
                 {
-                    ListViewItem lvi = new ListViewItem(item.RegisterationDate.ToShortTimeString());
+                    ListViewItem lvi = new ListViewItem(item.RegisterationDate.ToShortDateString());
                     lvi.SubItems.Add(item.MealType.MealTypeName);
                     lvi.SubItems.Add(item.MealDetails.Sum(x => x.Calory).ToString());
                     lvi.SubItems.Add(item.MealDetails.Count.ToString());
@@ -67,8 +67,15 @@ namespace CaloriMeter.UI.Views.UserForms
         private void btn_ogunAra_Click(object sender, EventArgs e)
         {
             mealService = new MealService();
-            List<Meal> meals = mealService.GetUserMeals(userid, dtp_baslangic.Value, dtp_bitis.Value);
-            FillMeals(meals);
+            try
+            {
+                List<Meal> meals = mealService.GetUserMeals(userid, dtp_baslangic.Value, dtp_bitis.Value.AddDays(1));
+                FillMeals(meals);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void lst_meals_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,6 +100,7 @@ namespace CaloriMeter.UI.Views.UserForms
         {
             AddMeal addMeal = new AddMeal(userid);
             addMeal.ShowDialog();
+            UpdateMeals();
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
@@ -101,7 +109,15 @@ namespace CaloriMeter.UI.Views.UserForms
             {
                 AddMeal addMeal = new AddMeal((Meal)lst_meals.SelectedItems[0].Tag);
                 addMeal.ShowDialog();
+                UpdateMeals();
             }
+        }
+
+        void UpdateMeals()
+        {
+            mealService = new MealService();
+            List<Meal> meals = mealService.GetUserMeals(userid);
+            FillMeals(meals);
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
