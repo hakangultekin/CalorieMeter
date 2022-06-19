@@ -168,6 +168,10 @@
       <Project>{1F9A89E5-0B77-452A-8945-8AF135E35FE0}</Project>
       <Name>CaloriMeter.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CaloriMeter.DAL\CaloriMeter.DAL.csproj">
+      <Project>{7e43ede0-d1a8-458f-bc5d-5df5e77483f5}</Project>
+      <Name>CaloriMeter.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CaloriMeter.Model\CaloriMeter.Model.csproj">
       <Project>{AB4EEF7C-C166-46C3-9A8F-1949EEDA8BAE}</Project>
       <Name>CaloriMeter.Model</Name>

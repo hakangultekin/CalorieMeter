@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtAra = new System.Windows.Forms.TextBox();
             this.btnSil = new System.Windows.Forms.Button();
-            this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnAra = new System.Windows.Forms.Button();
             this.btnGoruntule = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).BeginInit();
@@ -40,12 +39,14 @@
             // 
             // dgvListe
             // 
+            this.dgvListe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListe.Location = new System.Drawing.Point(45, 132);
             this.dgvListe.Margin = new System.Windows.Forms.Padding(4);
             this.dgvListe.Name = "dgvListe";
             this.dgvListe.RowHeadersWidth = 62;
             this.dgvListe.RowTemplate.Height = 28;
+            this.dgvListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListe.Size = new System.Drawing.Size(912, 565);
             this.dgvListe.TabIndex = 0;
             // 
@@ -74,15 +75,7 @@
             this.btnSil.TabIndex = 3;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Location = new System.Drawing.Point(481, 735);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(226, 54);
-            this.btnGuncelle.TabIndex = 3;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnAra
             // 
@@ -92,15 +85,17 @@
             this.btnAra.TabIndex = 3;
             this.btnAra.Text = "Bul";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // btnGoruntule
             // 
-            this.btnGoruntule.Location = new System.Drawing.Point(230, 735);
+            this.btnGoruntule.Location = new System.Drawing.Point(480, 735);
             this.btnGoruntule.Name = "btnGoruntule";
             this.btnGoruntule.Size = new System.Drawing.Size(226, 54);
             this.btnGoruntule.TabIndex = 3;
             this.btnGoruntule.Text = "Tümünü Görüntüle";
             this.btnGoruntule.UseVisualStyleBackColor = true;
+            this.btnGoruntule.Click += new System.EventHandler(this.btnGoruntule_Click);
             // 
             // AdminUserControl
             // 
@@ -108,7 +103,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 835);
             this.Controls.Add(this.btnGoruntule);
-            this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.txtAra);
@@ -118,6 +112,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminUserControl";
             this.Text = "AdminUserControl";
+            this.Load += new System.EventHandler(this.AdminUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -130,7 +125,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAra;
         private System.Windows.Forms.Button btnSil;
-        private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnAra;
         private System.Windows.Forms.Button btnGoruntule;
     }
