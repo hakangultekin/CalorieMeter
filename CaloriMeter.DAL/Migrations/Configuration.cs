@@ -23,8 +23,8 @@
             new ActivityTypeSeed(context);
             new CategorySeed(context);
             new MealTypeSeed(context);
-            new FoodSeed(context);
             new AdminSeed(context);
+            new FoodSeed(context);
 
         }
     }

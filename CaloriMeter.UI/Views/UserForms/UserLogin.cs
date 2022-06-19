@@ -187,6 +187,7 @@ namespace CaloriMeter.UI.Views.UserForms
             if (myMeals == null) myMeals = new MyMeals(user.UserID);
             this.Hide();
             myMeals.ShowDialog();
+            BilgileriGetir();
             this.Show();
         }
 
