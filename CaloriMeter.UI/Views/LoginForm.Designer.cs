@@ -109,9 +109,9 @@
             this.label1.Location = new System.Drawing.Point(52, 182);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 22);
+            this.label1.Size = new System.Drawing.Size(64, 22);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Kullanıcı Adı :";
+            this.label1.Text = "Email :";
             // 
             // btnGiris
             // 
