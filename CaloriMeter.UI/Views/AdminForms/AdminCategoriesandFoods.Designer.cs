@@ -38,13 +38,13 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtKategoriler = new System.Windows.Forms.TextBox();
             this.txtYemekler = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKalori = new System.Windows.Forms.TextBox();
+            this.cbCategories = new System.Windows.Forms.ComboBox();
+            this.txtGram = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPorsTip = new System.Windows.Forms.TextBox();
-            this.cbPorsTip = new System.Windows.Forms.ComboBox();
+            this.btnAra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEkle
@@ -74,6 +74,7 @@
             this.btnSil.TabIndex = 26;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // lvListe
             // 
@@ -102,18 +103,18 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Kalori";
-            this.columnHeader4.Width = 126;
+            this.columnHeader4.Text = "100 Birim Kalori";
+            this.columnHeader4.Width = 200;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Porsiyon tipi";
+            this.columnHeader2.Text = "Porsiyon Gram";
             this.columnHeader2.Width = 184;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(263, 68);
+            this.label4.Location = new System.Drawing.Point(260, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 23);
             this.label4.TabIndex = 16;
@@ -122,81 +123,84 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 134);
+            this.label2.Location = new System.Drawing.Point(277, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 23);
             this.label2.TabIndex = 17;
             this.label2.Text = "Yemekler :";
             // 
-            // txtKategoriler
-            // 
-            this.txtKategoriler.Location = new System.Drawing.Point(443, 65);
-            this.txtKategoriler.Name = "txtKategoriler";
-            this.txtKategoriler.Size = new System.Drawing.Size(371, 29);
-            this.txtKategoriler.TabIndex = 28;
-            // 
             // txtYemekler
             // 
-            this.txtYemekler.Location = new System.Drawing.Point(442, 131);
+            this.txtYemekler.Location = new System.Drawing.Point(439, 133);
             this.txtYemekler.Name = "txtYemekler";
-            this.txtYemekler.Size = new System.Drawing.Size(371, 29);
+            this.txtYemekler.Size = new System.Drawing.Size(263, 29);
             this.txtYemekler.TabIndex = 28;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(313, 200);
+            this.label1.Location = new System.Drawing.Point(225, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 23);
+            this.label1.Size = new System.Drawing.Size(144, 23);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Kalori:";
+            this.label1.Text = "100 birim Kalori:";
             // 
             // txtKalori
             // 
-            this.txtKalori.Location = new System.Drawing.Point(442, 197);
+            this.txtKalori.Location = new System.Drawing.Point(439, 199);
             this.txtKalori.Name = "txtKalori";
             this.txtKalori.Size = new System.Drawing.Size(371, 29);
             this.txtKalori.TabIndex = 28;
             // 
+            // cbCategories
+            // 
+            this.cbCategories.FormattingEnabled = true;
+            this.cbCategories.Location = new System.Drawing.Point(439, 68);
+            this.cbCategories.Name = "cbCategories";
+            this.cbCategories.Size = new System.Drawing.Size(371, 31);
+            this.cbCategories.TabIndex = 30;
+            // 
+            // txtGram
+            // 
+            this.txtGram.Location = new System.Drawing.Point(442, 266);
+            this.txtGram.Name = "txtGram";
+            this.txtGram.Size = new System.Drawing.Size(371, 29);
+            this.txtGram.TabIndex = 32;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(249, 266);
+            this.label3.Location = new System.Drawing.Point(236, 266);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 23);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Porsiyon tipi :";
+            this.label3.Size = new System.Drawing.Size(133, 23);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Porsiyon Gram:";
             // 
-            // txtPorsTip
+            // btnAra
             // 
-            this.txtPorsTip.Location = new System.Drawing.Point(639, 264);
-            this.txtPorsTip.Name = "txtPorsTip";
-            this.txtPorsTip.Size = new System.Drawing.Size(175, 29);
-            this.txtPorsTip.TabIndex = 28;
-            // 
-            // cbPorsTip
-            // 
-            this.cbPorsTip.FormattingEnabled = true;
-            this.cbPorsTip.Location = new System.Drawing.Point(442, 263);
-            this.cbPorsTip.Name = "cbPorsTip";
-            this.cbPorsTip.Size = new System.Drawing.Size(176, 31);
-            this.cbPorsTip.TabIndex = 29;
+            this.btnAra.Location = new System.Drawing.Point(719, 133);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(91, 29);
+            this.btnAra.TabIndex = 33;
+            this.btnAra.Text = "Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // AdminCategoriesandFoods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 772);
-            this.Controls.Add(this.cbPorsTip);
-            this.Controls.Add(this.txtPorsTip);
+            this.Controls.Add(this.btnAra);
+            this.Controls.Add(this.txtGram);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbCategories);
             this.Controls.Add(this.txtKalori);
             this.Controls.Add(this.txtYemekler);
-            this.Controls.Add(this.txtKategoriler);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.lvListe);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -221,12 +225,12 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtKategoriler;
         private System.Windows.Forms.TextBox txtYemekler;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKalori;
+        private System.Windows.Forms.ComboBox cbCategories;
+        private System.Windows.Forms.TextBox txtGram;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPorsTip;
-        private System.Windows.Forms.ComboBox cbPorsTip;
+        private System.Windows.Forms.Button btnAra;
     }
 }

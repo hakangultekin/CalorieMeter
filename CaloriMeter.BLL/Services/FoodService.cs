@@ -85,7 +85,7 @@ namespace CaloriMeter.BLL.Services
 
         void ControlBlanks(Food food)
         {
-            if (string.IsNullOrWhiteSpace(food.Name) || string.IsNullOrWhiteSpace(food.Grams.ToString()) || string.IsNullOrWhiteSpace(food.Per100Cal.ToString()) || string.IsNullOrWhiteSpace(food.CategoryID.ToString()) || string.IsNullOrWhiteSpace(food.UserID.ToString()) || string.IsNullOrWhiteSpace(food.PortionSize.ToString()))
+            if (string.IsNullOrWhiteSpace(food.Name) || string.IsNullOrWhiteSpace(food.Grams.ToString()) || string.IsNullOrWhiteSpace(food.Per100Cal.ToString()) || string.IsNullOrWhiteSpace(food.CategoryID.ToString()) || string.IsNullOrWhiteSpace(food.UserID.ToString())) //|| string.IsNullOrWhiteSpace(food.PortionSize.ToString()))
                 throw new Exception("Lütfen bütün alanları doldurunuz.");
         }
 

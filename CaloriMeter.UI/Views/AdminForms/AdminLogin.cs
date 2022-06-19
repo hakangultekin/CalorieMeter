@@ -45,5 +45,18 @@ namespace CaloriMeter.UI.Views.AdminForms
             this.Show();
             return form;
         }
+
+        private void btnPortionSize_Click(object sender, EventArgs e)
+        {
+            AdminPortionSize adminPortionSize = new AdminPortionSize();
+            FormHideAndShow(adminPortionSize);
+            
+        }
+
+        private void btnkategoriEkle_Click(object sender, EventArgs e)
+        {
+            AdminCategoryControl adminCategoryControl = new AdminCategoryControl();
+            FormHideAndShow(adminCategoryControl);
+        }
     }
 }

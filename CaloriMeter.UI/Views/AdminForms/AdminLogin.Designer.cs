@@ -31,6 +31,8 @@
             this.btnKullaniciKontrol = new System.Windows.Forms.Button();
             this.btnKategori = new System.Windows.Forms.Button();
             this.btnIstatistik = new System.Windows.Forms.Button();
+            this.btnkategoriEkle = new System.Windows.Forms.Button();
+            this.btnPortionSize = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKullaniciKontrol
@@ -51,7 +53,7 @@
             this.btnKategori.Name = "btnKategori";
             this.btnKategori.Size = new System.Drawing.Size(245, 77);
             this.btnKategori.TabIndex = 0;
-            this.btnKategori.Text = "Kategori ve Ürün Kontrol";
+            this.btnKategori.Text = "Ürün Kontrol";
             this.btnKategori.UseVisualStyleBackColor = true;
             this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
             // 
@@ -66,11 +68,33 @@
             this.btnIstatistik.UseVisualStyleBackColor = true;
             this.btnIstatistik.Click += new System.EventHandler(this.btnIstatistik_Click);
             // 
+            // btnkategoriEkle
+            // 
+            this.btnkategoriEkle.Location = new System.Drawing.Point(41, 189);
+            this.btnkategoriEkle.Name = "btnkategoriEkle";
+            this.btnkategoriEkle.Size = new System.Drawing.Size(245, 71);
+            this.btnkategoriEkle.TabIndex = 1;
+            this.btnkategoriEkle.Text = "Kategori Kontrol";
+            this.btnkategoriEkle.UseVisualStyleBackColor = true;
+            this.btnkategoriEkle.Click += new System.EventHandler(this.btnkategoriEkle_Click);
+            // 
+            // btnPortionSize
+            // 
+            this.btnPortionSize.Location = new System.Drawing.Point(315, 189);
+            this.btnPortionSize.Name = "btnPortionSize";
+            this.btnPortionSize.Size = new System.Drawing.Size(245, 71);
+            this.btnPortionSize.TabIndex = 1;
+            this.btnPortionSize.Text = "Porsiyon Kontrol";
+            this.btnPortionSize.UseVisualStyleBackColor = true;
+            this.btnPortionSize.Click += new System.EventHandler(this.btnPortionSize_Click);
+            // 
             // AdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 548);
+            this.Controls.Add(this.btnPortionSize);
+            this.Controls.Add(this.btnkategoriEkle);
             this.Controls.Add(this.btnIstatistik);
             this.Controls.Add(this.btnKategori);
             this.Controls.Add(this.btnKullaniciKontrol);
@@ -87,5 +111,7 @@
         private System.Windows.Forms.Button btnKullaniciKontrol;
         private System.Windows.Forms.Button btnKategori;
         private System.Windows.Forms.Button btnIstatistik;
+        private System.Windows.Forms.Button btnkategoriEkle;
+        private System.Windows.Forms.Button btnPortionSize;
     }
 }

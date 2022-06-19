@@ -34,6 +34,7 @@
             this.btnSil = new System.Windows.Forms.Button();
             this.btnAra = new System.Windows.Forms.Button();
             this.btnGoruntule = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +90,7 @@
             // 
             // btnGoruntule
             // 
-            this.btnGoruntule.Location = new System.Drawing.Point(480, 735);
+            this.btnGoruntule.Location = new System.Drawing.Point(248, 735);
             this.btnGoruntule.Name = "btnGoruntule";
             this.btnGoruntule.Size = new System.Drawing.Size(226, 54);
             this.btnGoruntule.TabIndex = 3;
@@ -97,11 +98,22 @@
             this.btnGoruntule.UseVisualStyleBackColor = true;
             this.btnGoruntule.Click += new System.EventHandler(this.btnGoruntule_Click);
             // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Location = new System.Drawing.Point(507, 735);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(201, 54);
+            this.btnGuncelle.TabIndex = 4;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            // 
             // AdminUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 835);
+            this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnGoruntule);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.btnSil);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnAra;
         private System.Windows.Forms.Button btnGoruntule;
+        private System.Windows.Forms.Button btnGuncelle;
     }
 }

@@ -57,5 +57,12 @@ namespace CaloriMeter.UI.Views.AdminForms
             //int rowIndex = dgvListe.CurrentCell.RowIndex;
             //dgvListe.Rows.RemoveAt(rowIndex);
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            dgvListe.Refresh();
+            dgvListe.Update();
+            context.SaveChanges();
+        }
     }
 }
