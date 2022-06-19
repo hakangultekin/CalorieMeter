@@ -45,7 +45,6 @@
             this.txtGram = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAra = new System.Windows.Forms.Button();
-            this.txtFoodID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnEkle
@@ -190,19 +189,11 @@
             this.btnAra.UseVisualStyleBackColor = true;
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
-            // txtFoodID
-            // 
-            this.txtFoodID.Location = new System.Drawing.Point(36, 70);
-            this.txtFoodID.Name = "txtFoodID";
-            this.txtFoodID.Size = new System.Drawing.Size(172, 29);
-            this.txtFoodID.TabIndex = 34;
-            // 
             // AdminCategoriesandFoods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 772);
-            this.Controls.Add(this.txtFoodID);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.txtGram);
             this.Controls.Add(this.label3);
@@ -244,6 +235,5 @@
         private System.Windows.Forms.TextBox txtGram;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAra;
-        private System.Windows.Forms.TextBox txtFoodID;
     }
 }

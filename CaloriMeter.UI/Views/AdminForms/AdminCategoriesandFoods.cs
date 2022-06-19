@@ -62,7 +62,7 @@ namespace CaloriMeter.UI.Views.AdminForms
         {
         }
 
-        int degisecekid;
+        
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
             List<Food> foodList = foodService.GetAll();
@@ -106,11 +106,11 @@ namespace CaloriMeter.UI.Views.AdminForms
         void GetAllFoodWithCategoyName()
         {
             List<Food> foodList = foodService.GetAll();
-            ListViewItem lvi = new ListViewItem();
 
             foreach (Food item in foodList)
             {
-                
+                ListViewItem lvi = new ListViewItem();
+
                 lvi.Text = item.Category.Name;
                 lvi.SubItems.Add(item.Name);
                 lvi.SubItems.Add(item.Per100Cal.ToString());
@@ -119,8 +119,6 @@ namespace CaloriMeter.UI.Views.AdminForms
 
                 lvListe.Items.Add(lvi);
             }
-
-            
         }
 
         void FillComboBoxWithCategory()
