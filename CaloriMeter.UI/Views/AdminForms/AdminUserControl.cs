@@ -47,16 +47,10 @@ namespace CaloriMeter.UI.Views.AdminForms
 
         void AllUsers()
         {
+            dgvListe.DataSource = null;
             var liste = context.Users.ToList();
             dgvListe.DataSource = liste;
-        }
-
-        private void btnSil_Click(object sender, EventArgs e)
-        {
-            //dgvListe.Rows.RemoveAt(dgvListe.SelectedRows[0].Index);
-            //int rowIndex = dgvListe.CurrentCell.RowIndex;
-            //dgvListe.Rows.RemoveAt(rowIndex);
-        }
+        }      
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {

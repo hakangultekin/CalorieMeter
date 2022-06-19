@@ -19,7 +19,6 @@ namespace CaloriMeter.UI.Views.AdminForms
             InitializeComponent();
             user = _user;
         }
-
         private void btnKullaniciKontrol_Click(object sender, EventArgs e)
         {
             AdminUserControl adminUserControl = new AdminUserControl();
@@ -44,13 +43,6 @@ namespace CaloriMeter.UI.Views.AdminForms
             form.ShowDialog();
             this.Show();
             return form;
-        }
-
-        private void btnPortionSize_Click(object sender, EventArgs e)
-        {
-            AdminPortionSize adminPortionSize = new AdminPortionSize();
-            FormHideAndShow(adminPortionSize);
-            
         }
 
         private void btnkategoriEkle_Click(object sender, EventArgs e)

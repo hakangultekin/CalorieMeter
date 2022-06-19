@@ -31,7 +31,6 @@
             this.dgvListe = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAra = new System.Windows.Forms.TextBox();
-            this.btnSil = new System.Windows.Forms.Button();
             this.btnAra = new System.Windows.Forms.Button();
             this.btnGoruntule = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
@@ -68,16 +67,6 @@
             this.txtAra.Size = new System.Drawing.Size(543, 29);
             this.txtAra.TabIndex = 2;
             // 
-            // btnSil
-            // 
-            this.btnSil.Location = new System.Drawing.Point(731, 735);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(226, 54);
-            this.btnSil.TabIndex = 3;
-            this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
-            // 
             // btnAra
             // 
             this.btnAra.Location = new System.Drawing.Point(761, 49);
@@ -90,7 +79,7 @@
             // 
             // btnGoruntule
             // 
-            this.btnGoruntule.Location = new System.Drawing.Point(248, 735);
+            this.btnGoruntule.Location = new System.Drawing.Point(503, 730);
             this.btnGoruntule.Name = "btnGoruntule";
             this.btnGoruntule.Size = new System.Drawing.Size(226, 54);
             this.btnGoruntule.TabIndex = 3;
@@ -100,7 +89,7 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(507, 735);
+            this.btnGuncelle.Location = new System.Drawing.Point(762, 730);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(201, 54);
             this.btnGuncelle.TabIndex = 4;
@@ -116,7 +105,6 @@
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnGoruntule);
             this.Controls.Add(this.btnAra);
-            this.Controls.Add(this.btnSil);
             this.Controls.Add(this.txtAra);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvListe);
@@ -136,7 +124,6 @@
         private System.Windows.Forms.DataGridView dgvListe;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAra;
-        private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnAra;
         private System.Windows.Forms.Button btnGoruntule;
         private System.Windows.Forms.Button btnGuncelle;
