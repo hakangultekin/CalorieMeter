@@ -15,7 +15,6 @@ namespace CaloriMeter.UI.Views.UserForms
     public partial class Statistics : Form
     {
         int userid;
-        UserService userService;
         MealService mealService;
         CategoryService categoryService;
         MealTypeService mealTypeService; 
@@ -24,7 +23,6 @@ namespace CaloriMeter.UI.Views.UserForms
         {
             InitializeComponent();
             userid = _userid;
-            userService = new UserService();
             mealService = new MealService();
             categoryService = new CategoryService();
             mealTypeService = new MealTypeService();
@@ -38,7 +36,7 @@ namespace CaloriMeter.UI.Views.UserForms
             DateTime bitis = DateTime.Now;
             DateTime baslangic = bitis.AddDays(-7);
 
-            List<Meal> allMeals = mealService.GetUserMeals(userid,baslangic, bitis);
+            List<Meal> allMeals = mealService.GetUserMeals(userid, baslangic, bitis);
 
             double kahvalti = allMeals.Where(x => x.MealTypeID == 1).ToList().Sum(y => y.MealDetails.Sum(z => z.Calory));
             double ogleYemegi = allMeals.Where(x => x.MealTypeID == 2).ToList().Sum(y => y.MealDetails.Sum(z => z.Calory));
@@ -84,7 +82,6 @@ namespace CaloriMeter.UI.Views.UserForms
 
                 lst_kategoriDetay.Items.Add(lvi);
             }
-
         }
 
         Food secilenFood;

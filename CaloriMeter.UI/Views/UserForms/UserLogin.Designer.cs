@@ -57,6 +57,8 @@
             this.pb_kalanKalori = new System.Windows.Forms.ProgressBar();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_alinanKalori = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -325,19 +327,21 @@
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.lbl_harcanacakKalori);
             this.panel3.Controls.Add(this.lbl_kalanBilgiText);
+            this.panel3.Controls.Add(this.lbl_alinanKalori);
             this.panel3.Controls.Add(this.lbl_gunlukKalori);
             this.panel3.Controls.Add(this.pb_kalanKalori);
+            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(200, 433);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(688, 156);
+            this.panel3.Size = new System.Drawing.Size(688, 210);
             this.panel3.TabIndex = 7;
             // 
             // lbl_harcanacakKalori
             // 
             this.lbl_harcanacakKalori.AutoSize = true;
-            this.lbl_harcanacakKalori.Location = new System.Drawing.Point(310, 81);
+            this.lbl_harcanacakKalori.Location = new System.Drawing.Point(310, 132);
             this.lbl_harcanacakKalori.Name = "lbl_harcanacakKalori";
             this.lbl_harcanacakKalori.Size = new System.Drawing.Size(93, 20);
             this.lbl_harcanacakKalori.TabIndex = 2;
@@ -346,7 +350,7 @@
             // lbl_kalanBilgiText
             // 
             this.lbl_kalanBilgiText.AutoSize = true;
-            this.lbl_kalanBilgiText.Location = new System.Drawing.Point(310, 58);
+            this.lbl_kalanBilgiText.Location = new System.Drawing.Point(310, 109);
             this.lbl_kalanBilgiText.Name = "lbl_kalanBilgiText";
             this.lbl_kalanBilgiText.Size = new System.Drawing.Size(93, 20);
             this.lbl_kalanBilgiText.TabIndex = 2;
@@ -364,7 +368,7 @@
             // 
             // pb_kalanKalori
             // 
-            this.pb_kalanKalori.Location = new System.Drawing.Point(20, 81);
+            this.pb_kalanKalori.Location = new System.Drawing.Point(20, 132);
             this.pb_kalanKalori.Name = "pb_kalanKalori";
             this.pb_kalanKalori.Size = new System.Drawing.Size(264, 20);
             this.pb_kalanKalori.TabIndex = 13;
@@ -390,6 +394,27 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Aktivite durumu, fiziksel özellikler dikkate alınarak hesaplanan, günlük minimum " +
     "harcanan kalori miktarıdır.";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label6.Location = new System.Drawing.Point(16, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(161, 19);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Günlük Alınan Kalori :";
+            // 
+            // lbl_alinanKalori
+            // 
+            this.lbl_alinanKalori.AutoSize = true;
+            this.lbl_alinanKalori.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_alinanKalori.Location = new System.Drawing.Point(209, 69);
+            this.lbl_alinanKalori.Name = "lbl_alinanKalori";
+            this.lbl_alinanKalori.Size = new System.Drawing.Size(21, 19);
+            this.lbl_alinanKalori.TabIndex = 4;
+            this.lbl_alinanKalori.Text = "--";
             // 
             // UserLogin
             // 
@@ -450,5 +475,7 @@
         private System.Windows.Forms.ProgressBar pb_kalanKalori;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_alinanKalori;
+        private System.Windows.Forms.Label label6;
     }
 }

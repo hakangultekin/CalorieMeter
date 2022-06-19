@@ -115,7 +115,8 @@ namespace CaloriMeter.UI.Views.UserForms
                 else
                 {
                     nud_gram.Value= secilenFood.Grams;
-                    txt_kalori.Text = ((secilenFood.Per100Cal / 100.0) * (double)secilenFood.Grams).ToString();
+                    decimal kalori = (decimal)(secilenFood.Per100Cal / 100.0) * nud_gram.Value;
+                    txt_kalori.Text = Convert.ToInt32(kalori).ToString();
                 }
             }
         }
@@ -127,8 +128,10 @@ namespace CaloriMeter.UI.Views.UserForms
 
         private void nud_gram_ValueChanged(object sender, EventArgs e)
         {
+            decimal kalori = (decimal)(secilenFood.Per100Cal / 100.0) * nud_gram.Value;
+
             if (secilenFood != null)
-                txt_kalori.Text = (Convert.ToInt32((secilenFood.Per100Cal / 100.0) * Convert.ToDouble(nud_gram.Value))).ToString();
+                txt_kalori.Text = Convert.ToInt32(kalori).ToString();
         }
 
         private void btn_ekle_Click(object sender, EventArgs e)

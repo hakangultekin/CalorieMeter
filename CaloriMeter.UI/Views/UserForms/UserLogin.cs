@@ -45,18 +45,28 @@ namespace CaloriMeter.UI.Views.UserForms
             llblHedefKilo.Text = user.KiloGoal.ToString() + " kg";
             lbl_boy.Text = user.Height + " cm";
 
-            pb_hedefKilo.Maximum = Convert.ToInt32(user.Weight);
-            pb_hedefKilo.Value = Convert.ToInt32(user.KiloGoal);
+            if (user.Weight < user.KiloGoal)
+            {
+                pb_hedefKilo.Value = Convert.ToInt32(user.Weight);
+                pb_hedefKilo.Maximum = Convert.ToInt32(user.KiloGoal);
+            }
+            else
+            {
+                pb_hedefKilo.Maximum = Convert.ToInt32(user.Weight);
+                pb_hedefKilo.Value = Convert.ToInt32(user.KiloGoal);
+            }
+            
 
             double vki = VucutKitleEndeksiHesapla(user);
             lblEndeks.Text = vki.ToString("N");
             lbl_endeksDurum.Text = EndeksDurumVer(vki);
-            lbl_gunlukKalori.Text = GunlukKaloriHesapla(user).ToString();
+            lbl_gunlukKalori.Text = GunlukKaloriHesapla(user).ToString() + " kcal";
 
             DateTime today = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
             List<Meal> bugununOgunleri = mealService.GetUserMeals(user.UserID, today, today.AddDays(1));
             int gunlukTuketilenKalori = bugununOgunleri.Sum(a => a.MealDetails.Sum(b => b.Calory));
             int gunlukStandartKalori = Convert.ToInt32(GunlukKaloriHesapla(user));
+            lbl_alinanKalori.Text = gunlukTuketilenKalori.ToString() + " kcal";
 
             if (user.Weight > user.KiloGoal)
                 lbl_kalanBilgiText.Text = "Günlük Kalan Kalori";
@@ -126,7 +136,7 @@ namespace CaloriMeter.UI.Views.UserForms
             else return "İdeal kilonun çok üstünde (Morbid Obez)";
         }
 
-        private double GunlukKaloriHesapla(User user)
+        private int GunlukKaloriHesapla(User user)
         {
             double cal = 0;
             switch (user.Gender)
@@ -155,7 +165,7 @@ namespace CaloriMeter.UI.Views.UserForms
                     break;
             }
 
-            return cal;
+            return (int)Math.Round(cal);
         }
 
         private void UserLogin_Load(object sender, EventArgs e)
@@ -193,7 +203,7 @@ namespace CaloriMeter.UI.Views.UserForms
 
         private void btn_istatistikler_Click(object sender, EventArgs e)
         {
-            if (stats == null) stats = new Statistics(user.UserID);
+            stats = new Statistics(user.UserID);
             this.Hide();
             stats.ShowDialog();
             this.Show();

@@ -306,6 +306,7 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.lst_kategoriDetay.FullRowSelect = true;
             this.lst_kategoriDetay.HideSelection = false;
             this.lst_kategoriDetay.Location = new System.Drawing.Point(14, 539);
             this.lst_kategoriDetay.Name = "lst_kategoriDetay";
