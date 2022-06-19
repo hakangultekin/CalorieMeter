@@ -31,7 +31,7 @@ namespace CaloriMeter.UI.Views.AdminForms
             cbCategories.DataSource = categoryService.GetAll();
             cbCategories.ValueMember = "CategoryID";
             cbCategories.DisplayMember = "Name";          
-            cbCategories.SelectedIndex = 0;
+            cbCategories.SelectedIndex = -1;
         }
 
         private void AdminCategoriesandFoods_Load(object sender, EventArgs e)

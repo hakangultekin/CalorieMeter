@@ -34,11 +34,11 @@ namespace CaloriMeter.UI.Views.AdminForms
             dgvListe.DataSource = context.Users.Where(u => u.Name.Contains(txtAra.Text)).ToList();
         }
 
-        //private void txtAra_TextChanged(object sender, EventArgs e)
-        //{
-        // context = new CalorieMeterDbContext();
-        // dgvListe.DataSource = context.Users.Where(u => u.Name.Contains(txtAra.Text)).ToList();
-        //}
+        private void txtAra_TextChanged(object sender, EventArgs e)
+        {
+            context = new CalorieMeterDbContext();
+            dgvListe.DataSource = context.Users.Where(u => u.Name.Contains(txtAra.Text)).ToList();
+        }
 
         private void btnGoruntule_Click(object sender, EventArgs e)
         {
@@ -50,6 +50,10 @@ namespace CaloriMeter.UI.Views.AdminForms
             dgvListe.DataSource = null;
             var liste = context.Users.ToList();
             dgvListe.DataSource = liste;
+
+            dgvListe.Columns["Meals"].Visible = false;
+            dgvListe.Columns["Foods"].Visible = false;
+            dgvListe.Columns["ActivityType"].Visible = false;
         }      
 
         private void btnGuncelle_Click(object sender, EventArgs e)
@@ -58,5 +62,7 @@ namespace CaloriMeter.UI.Views.AdminForms
             dgvListe.Update();
             context.SaveChanges();
         }
+
+     
     }
 }

@@ -21,13 +21,14 @@ namespace CaloriMeter.UI.Views.AdminForms
         {
             InitializeComponent();
 
+            
             context = new CalorieMeterDbContext();
             categoryService = new CategoryService();
 
             cbCats.DataSource = categoryService.GetAll();
             cbCats.ValueMember = "CategoryID";
             cbCats.DisplayMember = "Name";
-            cbCats.SelectedIndex = 0;
+            cbCats.SelectedIndex = -1;
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -44,15 +45,18 @@ namespace CaloriMeter.UI.Views.AdminForms
 
         private void btnCatGuncelle_Click(object sender, EventArgs e)
         {
-            Category cat = new Category();
+            if (cbCats.SelectedIndex==-1) txtYeniCat.Text = string.Empty;
+            else   cbCats.Text= txtYeniCat.Text;
 
-            cat.Name = cbCats.SelectedItem.ToString();
-            txtYeniCat.Text= cat.Name;
-                
+            Category category = new Category()
+            {
+                CategoryID = cbCats.SelectedIndex,
+                Name = txtYeniCat.Text             
+            };
             
-
-            bool guncellenecekCat = categoryService.Update(cat);
-            if (guncellenecekCat) MessageBox.Show("Kategori güncellendi.");
+            bool updateCat= categoryService.Update(category);
+            if (updateCat) MessageBox.Show("Yeni kategori başarı ile eklendi.");
+            context.SaveChanges();        
         }
     }
 }
