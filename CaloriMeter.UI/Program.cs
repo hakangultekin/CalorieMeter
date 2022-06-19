@@ -1,4 +1,5 @@
 ﻿using CaloriMeter.UI.Views;
+using CaloriMeter.UI.Views.UserForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,8 @@ namespace CaloriMeter.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            //Application.Run(new LoginForm());
+            Application.Run(new UserLogin());
         }
     }
 }

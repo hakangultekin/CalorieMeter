@@ -65,6 +65,7 @@ namespace CaloriMeter.UI.Views.UserForms
                 user.BirthDate = dtpDogum.Value;
                 user.Height = (int)nudBoy.Value;
                 user.Weight = (int)nudKilo.Value;
+                user.KiloGoal = (int)nud_hedefKilo.Value;
                 user.UserType = UserType.Standard;
                 user.ActivityTypeID = (int)cbAktivite.SelectedValue;
 

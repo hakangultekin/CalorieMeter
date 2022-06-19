@@ -59,9 +59,9 @@
     <Compile Include="EntityConfigurations\MealConfiguration.cs" />
     <Compile Include="EntityConfigurations\MealTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
-    <Compile Include="Migrations\202206181634052_firstdb.cs" />
-    <Compile Include="Migrations\202206181634052_firstdb.designer.cs">
-      <DependentUpon>202206181634052_firstdb.cs</DependentUpon>
+    <Compile Include="Migrations\202206182112248_firstdb.cs" />
+    <Compile Include="Migrations\202206182112248_firstdb.designer.cs">
+      <DependentUpon>202206182112248_firstdb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +87,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206181634052_firstdb.resx">
-      <DependentUpon>202206181634052_firstdb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206182112248_firstdb.resx">
+      <DependentUpon>202206182112248_firstdb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

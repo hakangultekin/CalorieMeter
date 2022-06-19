@@ -29,6 +29,7 @@
                         BirthDate = c.DateTime(nullable: false),
                         Height = c.Int(nullable: false),
                         Weight = c.Int(nullable: false),
+                        KiloGoal = c.Double(nullable: false),
                         ActivityTypeID = c.Int(nullable: false),
                         State = c.Boolean(nullable: false),
                         UserType = c.Int(nullable: false),

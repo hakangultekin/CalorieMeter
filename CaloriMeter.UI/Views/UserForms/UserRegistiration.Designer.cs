@@ -52,9 +52,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKayit = new System.Windows.Forms.Button();
             this.btnAktivityInfo = new System.Windows.Forms.Button();
+            this.nud_hedefKilo = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudBoy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKilo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_hedefKilo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -318,6 +321,31 @@
             this.btnAktivityInfo.UseVisualStyleBackColor = false;
             this.btnAktivityInfo.Click += new System.EventHandler(this.btnAktivityInfo_Click);
             // 
+            // nud_hedefKilo
+            // 
+            this.nud_hedefKilo.Location = new System.Drawing.Point(157, 466);
+            this.nud_hedefKilo.Margin = new System.Windows.Forms.Padding(4);
+            this.nud_hedefKilo.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nud_hedefKilo.Name = "nud_hedefKilo";
+            this.nud_hedefKilo.Size = new System.Drawing.Size(83, 25);
+            this.nud_hedefKilo.TabIndex = 34;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(153, 445);
+            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 20);
+            this.label14.TabIndex = 33;
+            this.label14.Text = "Hedef Kilo :";
+            // 
             // UserRegistiration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -326,6 +354,8 @@
             this.BackgroundImage = global::CaloriMeter.UI.Properties.Resources.bggray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(525, 519);
+            this.Controls.Add(this.nud_hedefKilo);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.btnAktivityInfo);
             this.Controls.Add(this.btnKayit);
             this.Controls.Add(this.pictureBox1);
@@ -361,6 +391,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudBoy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKilo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_hedefKilo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,5 +423,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnKayit;
         private System.Windows.Forms.Button btnAktivityInfo;
+        private System.Windows.Forms.NumericUpDown nud_hedefKilo;
+        private System.Windows.Forms.Label label14;
     }
 }

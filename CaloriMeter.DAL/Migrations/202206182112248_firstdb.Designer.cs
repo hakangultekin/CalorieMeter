@@ -13,7 +13,7 @@ namespace CalorieMeter.DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202206181634052_firstdb"; }
+            get { return "202206182112248_firstdb"; }
         }
         
         string IMigrationMetadata.Source

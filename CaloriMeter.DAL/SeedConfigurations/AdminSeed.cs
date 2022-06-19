@@ -22,7 +22,8 @@ namespace CaloriMeter.DAL.SeedConfigurations
                 ActivityTypeID = 1,
                 BirthDate = DateTime.Now,
                 Height = 180,
-                Weight = 100,
+                Weight = 98,
+                KiloGoal = 75,
                 Gender = Gender.Erkek,
                 State = true
             };

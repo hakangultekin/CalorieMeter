@@ -25,6 +25,7 @@ namespace CaloriMeter.Model.Entitites
         public int Age { get { return DateTime.Now.Year - BirthDate.Year; } }
         public int Height { get; set; }
         public int Weight { get; set; }
+        public double KiloGoal { get; set; }
         public int ActivityTypeID { get; set; }
         public bool State { get; set; }
         public UserType UserType { get; set; }

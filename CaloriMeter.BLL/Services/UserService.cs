@@ -116,10 +116,10 @@ namespace CaloriMeter.BLL.Services
 
         void CheckRequired(User user)
         {
-            if (user.Name == null) throw new Exception("İsim boş olamaz.");
-            if (user.LastName == null) throw new Exception("Soyad alanı boş olamaz.");
-            if (user.UserName == null) throw new Exception("Username alanı boş olamaz.");
-            if (user.Password == null) throw new Exception("Şifre alanı boş olamaz.");
+            if (string.IsNullOrEmpty(user.Name)) throw new Exception("İsim boş olamaz.");
+            if (string.IsNullOrEmpty(user.LastName)) throw new Exception("Soyad alanı boş olamaz.");
+            if (string.IsNullOrEmpty(user.UserName)) throw new Exception("Username alanı boş olamaz.");
+            if (string.IsNullOrEmpty(user.Password)) throw new Exception("Şifre alanı boş olamaz.");
             if (string.IsNullOrWhiteSpace(user.Height.ToString()) || string.IsNullOrWhiteSpace(user.Weight.ToString())) throw new Exception("Boy ve kilo alanlarını giriniz.");
         }
 

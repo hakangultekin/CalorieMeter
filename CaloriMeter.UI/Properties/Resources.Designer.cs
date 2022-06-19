@@ -83,9 +83,29 @@ namespace CaloriMeter.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caloriemeterlogowhite {
+            get {
+                object obj = ResourceManager.GetObject("caloriemeterlogowhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Clouds {
             get {
                 object obj = ResourceManager.GetObject("Clouds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit32x24 {
+            get {
+                object obj = ResourceManager.GetObject("exit32x24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
