@@ -36,6 +36,12 @@ namespace CaloriMeter.UI.Views.AdminForms
             AdminStatistics adminStatistics = new AdminStatistics();
             FormHideAndShow(adminStatistics);
         }
+ 
+        private void btnkategoriEkle_Click(object sender, EventArgs e)
+        {
+            AdminCategoryControl adminCategoryControl = new AdminCategoryControl();
+            FormHideAndShow(adminCategoryControl);
+        }
 
         public Form FormHideAndShow(Form form)
         {
@@ -45,10 +51,5 @@ namespace CaloriMeter.UI.Views.AdminForms
             return form;
         }
 
-        private void btnkategoriEkle_Click(object sender, EventArgs e)
-        {
-            AdminCategoryControl adminCategoryControl = new AdminCategoryControl();
-            FormHideAndShow(adminCategoryControl);
-        }
     }
 }

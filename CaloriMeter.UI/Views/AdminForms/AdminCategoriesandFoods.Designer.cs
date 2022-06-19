@@ -45,6 +45,7 @@
             this.txtGram = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAra = new System.Windows.Forms.Button();
+            this.txtFoodID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnEkle
@@ -65,6 +66,7 @@
             this.btnGuncelle.TabIndex = 25;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -83,6 +85,7 @@
             this.columnHeader1,
             this.columnHeader4,
             this.columnHeader2});
+            this.lvListe.FullRowSelect = true;
             this.lvListe.HideSelection = false;
             this.lvListe.Location = new System.Drawing.Point(49, 455);
             this.lvListe.Name = "lvListe";
@@ -90,6 +93,7 @@
             this.lvListe.TabIndex = 23;
             this.lvListe.UseCompatibleStateImageBehavior = false;
             this.lvListe.View = System.Windows.Forms.View.Details;
+            this.lvListe.SelectedIndexChanged += new System.EventHandler(this.lvListe_SelectedIndexChanged);
             // 
             // columnHeader3
             // 
@@ -186,11 +190,19 @@
             this.btnAra.UseVisualStyleBackColor = true;
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
+            // txtFoodID
+            // 
+            this.txtFoodID.Location = new System.Drawing.Point(36, 70);
+            this.txtFoodID.Name = "txtFoodID";
+            this.txtFoodID.Size = new System.Drawing.Size(172, 29);
+            this.txtFoodID.TabIndex = 34;
+            // 
             // AdminCategoriesandFoods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 772);
+            this.Controls.Add(this.txtFoodID);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.txtGram);
             this.Controls.Add(this.label3);
@@ -232,5 +244,6 @@
         private System.Windows.Forms.TextBox txtGram;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAra;
+        private System.Windows.Forms.TextBox txtFoodID;
     }
 }
