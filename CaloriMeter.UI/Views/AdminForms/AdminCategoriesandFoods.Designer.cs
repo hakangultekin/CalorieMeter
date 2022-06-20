@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnAra = new System.Windows.Forms.Button();
+            this.txtGram = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbCategories = new System.Windows.Forms.ComboBox();
+            this.txtKalori = new System.Windows.Forms.TextBox();
+            this.txtYemekler = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
@@ -37,40 +43,81 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtKategoriler = new System.Windows.Forms.TextBox();
-            this.txtYemekler = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtKalori = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPorsTip = new System.Windows.Forms.TextBox();
-            this.cbPorsTip = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnAra
+            // 
+            this.btnAra.Location = new System.Drawing.Point(722, 127);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(91, 29);
+            this.btnAra.TabIndex = 46;
+            this.btnAra.Text = "Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            // 
+            // txtGram
+            // 
+            this.txtGram.Location = new System.Drawing.Point(445, 260);
+            this.txtGram.Name = "txtGram";
+            this.txtGram.Size = new System.Drawing.Size(371, 29);
+            this.txtGram.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(239, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 23);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Porsiyon Gram:";
+            // 
+            // cbCategories
+            // 
+            this.cbCategories.FormattingEnabled = true;
+            this.cbCategories.Location = new System.Drawing.Point(442, 62);
+            this.cbCategories.Name = "cbCategories";
+            this.cbCategories.Size = new System.Drawing.Size(371, 31);
+            this.cbCategories.TabIndex = 43;
+            // 
+            // txtKalori
+            // 
+            this.txtKalori.Location = new System.Drawing.Point(442, 193);
+            this.txtKalori.Name = "txtKalori";
+            this.txtKalori.Size = new System.Drawing.Size(371, 29);
+            this.txtKalori.TabIndex = 41;
+            // 
+            // txtYemekler
+            // 
+            this.txtYemekler.Location = new System.Drawing.Point(442, 127);
+            this.txtYemekler.Name = "txtYemekler";
+            this.txtYemekler.Size = new System.Drawing.Size(263, 29);
+            this.txtYemekler.TabIndex = 42;
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(254, 340);
+            this.btnEkle.Location = new System.Drawing.Point(257, 334);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(175, 64);
-            this.btnEkle.TabIndex = 24;
+            this.btnEkle.TabIndex = 38;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(443, 340);
+            this.btnGuncelle.Location = new System.Drawing.Point(446, 334);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(175, 64);
-            this.btnGuncelle.TabIndex = 25;
+            this.btnGuncelle.TabIndex = 39;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(639, 340);
+            this.btnSil.Location = new System.Drawing.Point(642, 334);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(175, 64);
-            this.btnSil.TabIndex = 26;
+            this.btnSil.TabIndex = 40;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
             // 
@@ -81,11 +128,12 @@
             this.columnHeader1,
             this.columnHeader4,
             this.columnHeader2});
+            this.lvListe.FullRowSelect = true;
             this.lvListe.HideSelection = false;
-            this.lvListe.Location = new System.Drawing.Point(49, 455);
+            this.lvListe.Location = new System.Drawing.Point(52, 449);
             this.lvListe.Name = "lvListe";
             this.lvListe.Size = new System.Drawing.Size(765, 262);
-            this.lvListe.TabIndex = 23;
+            this.lvListe.TabIndex = 37;
             this.lvListe.UseCompatibleStateImageBehavior = false;
             this.lvListe.View = System.Windows.Forms.View.Details;
             // 
@@ -101,101 +149,56 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Kalori";
-            this.columnHeader4.Width = 126;
+            this.columnHeader4.Text = "100 Birim Kalori";
+            this.columnHeader4.Width = 200;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Porsiyon tipi";
+            this.columnHeader2.Text = "Porsiyon Gram";
             this.columnHeader2.Width = 184;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(263, 68);
+            this.label4.Location = new System.Drawing.Point(263, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 23);
-            this.label4.TabIndex = 16;
+            this.label4.TabIndex = 34;
             this.label4.Text = "Kategoriler :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 23);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Yemekler :";
-            // 
-            // txtKategoriler
-            // 
-            this.txtKategoriler.Location = new System.Drawing.Point(443, 65);
-            this.txtKategoriler.Name = "txtKategoriler";
-            this.txtKategoriler.Size = new System.Drawing.Size(371, 29);
-            this.txtKategoriler.TabIndex = 28;
-            // 
-            // txtYemekler
-            // 
-            this.txtYemekler.Location = new System.Drawing.Point(442, 131);
-            this.txtYemekler.Name = "txtYemekler";
-            this.txtYemekler.Size = new System.Drawing.Size(371, 29);
-            this.txtYemekler.TabIndex = 28;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(313, 200);
+            this.label1.Location = new System.Drawing.Point(228, 193);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 23);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Kalori:";
+            this.label1.Size = new System.Drawing.Size(144, 23);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "100 birim Kalori:";
             // 
-            // txtKalori
+            // label2
             // 
-            this.txtKalori.Location = new System.Drawing.Point(442, 197);
-            this.txtKalori.Name = "txtKalori";
-            this.txtKalori.Size = new System.Drawing.Size(371, 29);
-            this.txtKalori.TabIndex = 28;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(249, 266);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 23);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Porsiyon tipi :";
-            // 
-            // txtPorsTip
-            // 
-            this.txtPorsTip.Location = new System.Drawing.Point(639, 264);
-            this.txtPorsTip.Name = "txtPorsTip";
-            this.txtPorsTip.Size = new System.Drawing.Size(175, 29);
-            this.txtPorsTip.TabIndex = 28;
-            // 
-            // cbPorsTip
-            // 
-            this.cbPorsTip.FormattingEnabled = true;
-            this.cbPorsTip.Location = new System.Drawing.Point(442, 263);
-            this.cbPorsTip.Name = "cbPorsTip";
-            this.cbPorsTip.Size = new System.Drawing.Size(176, 31);
-            this.cbPorsTip.TabIndex = 29;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(280, 130);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 23);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Yemekler :";
             // 
             // AdminCategoriesandFoods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 772);
-            this.Controls.Add(this.cbPorsTip);
-            this.Controls.Add(this.txtPorsTip);
+            this.Controls.Add(this.btnAra);
+            this.Controls.Add(this.txtGram);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbCategories);
             this.Controls.Add(this.txtKalori);
             this.Controls.Add(this.txtYemekler);
-            this.Controls.Add(this.txtKategoriler);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.lvListe);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -209,22 +212,23 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnAra;
+        private System.Windows.Forms.TextBox txtGram;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbCategories;
+        private System.Windows.Forms.TextBox txtKalori;
+        private System.Windows.Forms.TextBox txtYemekler;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.ListView lvListe;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtKategoriler;
-        private System.Windows.Forms.TextBox txtYemekler;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtKalori;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPorsTip;
-        private System.Windows.Forms.ComboBox cbPorsTip;
+        private System.Windows.Forms.Label label2;
     }
 }
