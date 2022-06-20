@@ -21,7 +21,7 @@ namespace CaloriMeter.DAL.Repositories
         /// <returns></returns>
         public List<Food> GetAll()
         {
-            return db.Foods.ToList();
+            return db.Foods.OrderBy(c => c.CategoryID).ToList();
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace CaloriMeter.DAL.Repositories
         /// <returns></returns>
         public List<Food> GetAllByUser(int userid)
         {
-            return db.Foods.Where(x => x.UserID == 1 || x.UserID == userid && x.State == true).ToList();
+            return db.Foods.Where(x => (x.UserID == 1 || x.UserID == userid) && x.State == true).OrderBy(c => c.CategoryID).ToList();
         }
 
         public List<Food> FindFood(string word)

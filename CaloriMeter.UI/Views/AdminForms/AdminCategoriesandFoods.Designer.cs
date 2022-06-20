@@ -49,7 +49,7 @@
             // 
             // btnAra
             // 
-            this.btnAra.Location = new System.Drawing.Point(722, 127);
+            this.btnAra.Location = new System.Drawing.Point(722, 123);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(91, 29);
             this.btnAra.TabIndex = 46;
@@ -60,7 +60,7 @@
             // 
             this.txtGram.Location = new System.Drawing.Point(445, 260);
             this.txtGram.Name = "txtGram";
-            this.txtGram.Size = new System.Drawing.Size(371, 29);
+            this.txtGram.Size = new System.Drawing.Size(371, 25);
             this.txtGram.TabIndex = 45;
             // 
             // label3
@@ -68,7 +68,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(239, 260);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 23);
+            this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 44;
             this.label3.Text = "Porsiyon Gram:";
             // 
@@ -77,21 +77,21 @@
             this.cbCategories.FormattingEnabled = true;
             this.cbCategories.Location = new System.Drawing.Point(442, 62);
             this.cbCategories.Name = "cbCategories";
-            this.cbCategories.Size = new System.Drawing.Size(371, 31);
+            this.cbCategories.Size = new System.Drawing.Size(371, 27);
             this.cbCategories.TabIndex = 43;
             // 
             // txtKalori
             // 
             this.txtKalori.Location = new System.Drawing.Point(442, 193);
             this.txtKalori.Name = "txtKalori";
-            this.txtKalori.Size = new System.Drawing.Size(371, 29);
+            this.txtKalori.Size = new System.Drawing.Size(371, 25);
             this.txtKalori.TabIndex = 41;
             // 
             // txtYemekler
             // 
             this.txtYemekler.Location = new System.Drawing.Point(442, 127);
             this.txtYemekler.Name = "txtYemekler";
-            this.txtYemekler.Size = new System.Drawing.Size(263, 29);
+            this.txtYemekler.Size = new System.Drawing.Size(263, 25);
             this.txtYemekler.TabIndex = 42;
             // 
             // btnEkle
@@ -143,12 +143,12 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Kategoriler";
+            this.columnHeader3.Text = "Kategori";
             this.columnHeader3.Width = 202;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Yemekler";
+            this.columnHeader1.Text = "Yemek Adı";
             this.columnHeader1.Width = 172;
             // 
             // columnHeader4
@@ -166,7 +166,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(263, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 23);
+            this.label4.Size = new System.Drawing.Size(90, 20);
             this.label4.TabIndex = 34;
             this.label4.Text = "Kategoriler :";
             // 
@@ -175,7 +175,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(228, 193);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 23);
+            this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 35;
             this.label1.Text = "100 birim Kalori:";
             // 
@@ -184,13 +184,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(280, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 23);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 36;
             this.label2.Text = "Yemekler :";
             // 
             // AdminCategoriesandFoods
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 772);
             this.Controls.Add(this.btnAra);

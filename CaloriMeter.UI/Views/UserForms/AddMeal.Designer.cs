@@ -285,6 +285,7 @@
             this.Controls.Add(this.cb_mealTypes);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(739, 549);
             this.Name = "AddMeal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Öğün Girişi";

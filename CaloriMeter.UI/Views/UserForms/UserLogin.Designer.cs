@@ -53,12 +53,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_harcanacakKalori = new System.Windows.Forms.Label();
             this.lbl_kalanBilgiText = new System.Windows.Forms.Label();
+            this.lbl_alinanKalori = new System.Windows.Forms.Label();
             this.lbl_gunlukKalori = new System.Windows.Forms.Label();
             this.pb_kalanKalori = new System.Windows.Forms.ProgressBar();
+            this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_alinanKalori = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -356,6 +356,16 @@
             this.lbl_kalanBilgiText.TabIndex = 2;
             this.lbl_kalanBilgiText.Text = "kalori bilgi--";
             // 
+            // lbl_alinanKalori
+            // 
+            this.lbl_alinanKalori.AutoSize = true;
+            this.lbl_alinanKalori.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_alinanKalori.Location = new System.Drawing.Point(209, 69);
+            this.lbl_alinanKalori.Name = "lbl_alinanKalori";
+            this.lbl_alinanKalori.Size = new System.Drawing.Size(21, 19);
+            this.lbl_alinanKalori.TabIndex = 4;
+            this.lbl_alinanKalori.Text = "--";
+            // 
             // lbl_gunlukKalori
             // 
             this.lbl_gunlukKalori.AutoSize = true;
@@ -372,6 +382,17 @@
             this.pb_kalanKalori.Name = "pb_kalanKalori";
             this.pb_kalanKalori.Size = new System.Drawing.Size(264, 20);
             this.pb_kalanKalori.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label6.Location = new System.Drawing.Point(16, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(161, 19);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Günlük Alınan Kalori :";
             // 
             // label9
             // 
@@ -395,27 +416,6 @@
             this.label5.Text = "Aktivite durumu, fiziksel özellikler dikkate alınarak hesaplanan, günlük minimum " +
     "harcanan kalori miktarıdır.";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.label6.Location = new System.Drawing.Point(16, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 19);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Günlük Alınan Kalori :";
-            // 
-            // lbl_alinanKalori
-            // 
-            this.lbl_alinanKalori.AutoSize = true;
-            this.lbl_alinanKalori.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_alinanKalori.Location = new System.Drawing.Point(209, 69);
-            this.lbl_alinanKalori.Name = "lbl_alinanKalori";
-            this.lbl_alinanKalori.Size = new System.Drawing.Size(21, 19);
-            this.lbl_alinanKalori.TabIndex = 4;
-            this.lbl_alinanKalori.Text = "--";
-            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -428,10 +428,10 @@
             this.Controls.Add(this.txt_hosgeldinMesaj);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(894, 880);
+            this.MaximumSize = new System.Drawing.Size(894, 760);
             this.Name = "UserLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserLogin";
+            this.Text = "Hoşgeldiniz - CalorieMeter";
             this.Load += new System.EventHandler(this.UserLogin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

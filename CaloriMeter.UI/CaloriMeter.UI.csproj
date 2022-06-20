@@ -88,6 +88,12 @@
     <Compile Include="Views\AdminForms\AdminUserControl.Designer.cs">
       <DependentUpon>AdminUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\AdminForms\FoodControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminForms\FoodControlPanel.Designer.cs">
+      <DependentUpon>FoodControlPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AdminForms\AdminUserControl.resx">
       <DependentUpon>AdminUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminForms\FoodControlPanel.resx">
+      <DependentUpon>FoodControlPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

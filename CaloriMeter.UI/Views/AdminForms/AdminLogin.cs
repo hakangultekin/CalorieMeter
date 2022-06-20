@@ -27,14 +27,15 @@ namespace CaloriMeter.UI.Views.AdminForms
 
         private void btnKategori_Click(object sender, EventArgs e)
         {
-            AdminCategoriesandFoods adminCategoriesandFoods = new AdminCategoriesandFoods();
-            FormHideAndShow(adminCategoriesandFoods);
+            FoodControlPanel fcp = new FoodControlPanel(user.UserID);
+            FormHideAndShow(fcp);
         }
 
         private void btnIstatistik_Click(object sender, EventArgs e)
         {
-            AdminStatistics adminStatistics = new AdminStatistics();
-            FormHideAndShow(adminStatistics);
+            MessageBox.Show("Admin istatistik paneli bakım aşamasındadır...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //AdminStatistics adminStatistics = new AdminStatistics();
+            //FormHideAndShow(adminStatistics);
         }
 
         private void btnkategoriEkle_Click(object sender, EventArgs e)

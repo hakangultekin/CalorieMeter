@@ -144,6 +144,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_kategoriler);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

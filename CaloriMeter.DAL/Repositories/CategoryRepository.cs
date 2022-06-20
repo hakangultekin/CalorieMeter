@@ -35,9 +35,9 @@ namespace CaloriMeter.DAL.Repositories
             return affRows > 0;
         }
 
-        public List<Category> FindCategory(string word)
+        public Category GetCategoryById(int id)
         {
-            return db.Categories.Where(x => x.Name.Contains(word)).ToList();
+            return db.Categories.Find(id);
         }
     }
 }

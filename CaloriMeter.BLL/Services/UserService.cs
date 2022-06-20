@@ -76,6 +76,16 @@ namespace CaloriMeter.BLL.Services
         }
 
         /// <summary>
+        /// Kullanıcı adı ve soyadına göre arama yapar
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
+        public List<User> FindUser(string word)
+        {
+            return userRepository.FindUser(word);
+        }
+
+        /// <summary>
         /// Yeni kullanıcı ekler.
         /// </summary>
         /// <param name="entity"></param>

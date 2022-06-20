@@ -46,6 +46,11 @@ namespace CaloriMeter.DAL.Repositories
             return affRows > 0;
         }
 
+        public List<User> FindUser(string word)
+        {
+            return db.Users.Where(x => x.Name.Contains(word) || x.LastName.Contains(word) || x.UserName.Contains(word)).ToList();
+        }
+
         public bool Insert(User entity)
         {
             db.Users.Add(entity);

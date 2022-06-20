@@ -29,7 +29,7 @@ namespace CaloriMeter.BLL.Services
             {
                 return categoryRepository.Insert(entity);
             }
-            else throw new Exception("Categori bilgisi eksik");
+            else throw new Exception("Categori Ad bilgisi eksik");
         }
 
         public bool Update(Category entity)
@@ -41,9 +41,9 @@ namespace CaloriMeter.BLL.Services
             else throw new Exception("Categori bilgisi eksik");
         }
 
-        public List<Category> FindCategory(string word)
+        public Category GetCategoryById(int id)
         {
-            return categoryRepository.FindCategory(word);
+            return categoryRepository.GetCategoryById(id);
         }
 
         bool CheckCategoryName(Category entity)

@@ -1,6 +1,8 @@
 ﻿
+using CaloriMeter.BLL.Services;
 using CaloriMeter.DAL;
 using CaloriMeter.Model.Entitites;
+using CaloriMeter.UI.Views.UserForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,55 +17,85 @@ namespace CaloriMeter.UI.Views.AdminForms
 {
     public partial class AdminUserControl : Form
     {
-        CalorieMeterDbContext context;
+        UserService userService;
         User user;
-        //BindingList<User> users1;
         public AdminUserControl()
         {
-            context = new CalorieMeterDbContext();
+            userService = new UserService();
             InitializeComponent();
         }
 
         private void AdminUserControl_Load(object sender, EventArgs e)
         {
-            AllUsers();
-            //users1 = new BindingList<User>();  
+            FillList(userService.GetAllUsers());
         }
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-            dgvListe.DataSource = context.Users.Where(u => u.Name.Contains(txtAra.Text)).ToList();
-        }
+            if (txtAra.Text.Length > 1)
+                FillList(userService.FindUser(txtAra.Text));
 
-        private void txtAra_TextChanged(object sender, EventArgs e)
-        {
-            context = new CalorieMeterDbContext();
-            dgvListe.DataSource = context.Users.Where(u => u.Name.Contains(txtAra.Text)).ToList();
+            if (string.IsNullOrWhiteSpace(txtAra.Text))
+                FillList(userService.GetAllUsers());
         }
 
         private void btnGoruntule_Click(object sender, EventArgs e)
         {
-            AllUsers();
+            FillList(userService.GetAllUsers());
         }
 
-        void AllUsers()
+        void FillList(List<User> users)
         {
-            dgvListe.DataSource = null;
-            var liste = context.Users.ToList();
-            dgvListe.DataSource = liste;
+            lst_users.Items.Clear();
 
-            dgvListe.Columns["Meals"].Visible = false;
-            dgvListe.Columns["Foods"].Visible = false;
-            dgvListe.Columns["ActivityType"].Visible = false;
+            foreach (User usr in users)
+            {
+                ListViewItem lvi = new ListViewItem(usr.Name);
+                lvi.SubItems.Add(usr.LastName);
+                lvi.SubItems.Add(usr.UserName);
+                lvi.SubItems.Add(usr.Gender.ToString());
+                lvi.SubItems.Add(usr.BirthDate.ToShortDateString());
+                lvi.SubItems.Add(usr.State.ToString());
+                lvi.Tag = usr;
+
+                lst_users.Items.Add(lvi);
+            }
         }
 
-        private void btnGuncelle_Click(object sender, EventArgs e)
+        private void btn_getPassives_Click(object sender, EventArgs e)
         {
-            dgvListe.Refresh();
-            dgvListe.Update();
-            context.SaveChanges();
+            FillList(userService.GetPasiveUsers());
         }
 
+        private void lst_users_DoubleClick(object sender, EventArgs e)
+        {
+            int index = lst_users.SelectedItems[0].Index;
+            if (index > -1)
+            {
+                User user = (User)lst_users.SelectedItems[0].Tag;
+                UpdateInfo updateInfo = new UpdateInfo(user);
+                updateInfo.ShowDialog();
 
+                userService = new UserService();
+                FillList(userService.GetAllUsers());
+            }
+        }
+
+        private void btn_aktiflestir_Click(object sender, EventArgs e)
+        {
+            int index = lst_users.SelectedItems[0].Index;
+            if (index > -1)
+            {
+                User user = (User)lst_users.SelectedItems[0].Tag;
+                user.State = true;
+                userService.Update(user);
+                FillList(userService.GetAllUsers());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

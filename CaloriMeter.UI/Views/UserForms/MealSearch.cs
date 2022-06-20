@@ -18,18 +18,32 @@ namespace CaloriMeter.UI.Views.UserForms
         CategoryService categoryService;
         public Food selectedFood;
         int userid;
+        bool isAdmin = false;
 
         public MealSearch(int _userid)
         {
             InitializeComponent();
             userid = _userid;
             foodService = new FoodService();
+
+            FillCategories();
+            FillList(foodService.GetAllByUser(userid));
+        }
+
+        public MealSearch(int _userid, bool _isAdmin)
+        {
+            InitializeComponent();
+            foodService = new FoodService();
+            userid = _userid;
+            isAdmin = _isAdmin;
+
+            FillCategories();
+            FillList(foodService.GetAll());
         }
 
         private void MealSearch_Load(object sender, EventArgs e)
         {
-            FillCategories();
-            FillList(foodService.GetAllByUser(userid));
+            
         }
 
         void FillList(List<Food> foodList)
@@ -63,11 +77,16 @@ namespace CaloriMeter.UI.Views.UserForms
 
             if (cmb_kategoriler.SelectedIndex != 0)
             {
-                FillList(foodService.GetAllByUser(userid).Where(x => x.CategoryID == (int)cmb_kategoriler.SelectedValue).ToList());
+                if(isAdmin)
+                    FillList(foodService.GetAll().Where(x => x.CategoryID == (int)cmb_kategoriler.SelectedValue).ToList());
+                else
+                    FillList(foodService.GetAllByUser(userid).Where(x => x.CategoryID == (int)cmb_kategoriler.SelectedValue).ToList());
             }
-                
             else
-                FillList(foodService.GetAllByUser(userid));
+                if(isAdmin)
+                    FillList(foodService.GetAll());
+                else
+                    FillList(foodService.GetAllByUser(userid));
         }
 
         private void txt_yemekAdi_TextChanged(object sender, EventArgs e)
