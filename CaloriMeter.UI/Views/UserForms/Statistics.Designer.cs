@@ -603,6 +603,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(746, 844);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lst_kategoriDetay);

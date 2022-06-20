@@ -83,11 +83,12 @@ namespace CaloriMeter.UI.Views.AdminForms
 
         private void btn_aktiflestir_Click(object sender, EventArgs e)
         {
-            int index = lst_users.SelectedItems[0].Index;
-            if (index > -1)
+            
+            if (lst_users.SelectedItems.Count > 0)
             {
+                int index = lst_users.SelectedItems[0].Index;
                 User user = (User)lst_users.SelectedItems[0].Tag;
-                user.State = true;
+                user.State = !user.State;
                 userService.Update(user);
                 FillList(userService.GetAllUsers());
             }

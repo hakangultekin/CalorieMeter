@@ -96,7 +96,7 @@
             this.btn_aktiflestir.Name = "btn_aktiflestir";
             this.btn_aktiflestir.Size = new System.Drawing.Size(182, 44);
             this.btn_aktiflestir.TabIndex = 5;
-            this.btn_aktiflestir.Text = "Aktifleştir";
+            this.btn_aktiflestir.Text = "Durum Değiştir";
             this.btn_aktiflestir.UseVisualStyleBackColor = false;
             this.btn_aktiflestir.Click += new System.EventHandler(this.btn_aktiflestir_Click);
             // 
