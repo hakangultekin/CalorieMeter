@@ -44,6 +44,7 @@
             this.btnCatGuncelle.TabIndex = 44;
             this.btnCatGuncelle.Text = "Güncelle";
             this.btnCatGuncelle.UseVisualStyleBackColor = true;
+            this.btnCatGuncelle.Click += new System.EventHandler(this.btnCatGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -53,6 +54,7 @@
             this.btnEkle.TabIndex = 43;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // cbCats
             // 
@@ -61,6 +63,7 @@
             this.cbCats.Name = "cbCats";
             this.cbCats.Size = new System.Drawing.Size(243, 24);
             this.cbCats.TabIndex = 42;
+            this.cbCats.SelectedIndexChanged += new System.EventHandler(this.cbCats_SelectedIndexChanged);
             // 
             // txtYeniCat
             // 

@@ -46,7 +46,7 @@ namespace CaloriMeter.UI.Views.AdminForms
         private void btnCatGuncelle_Click(object sender, EventArgs e)
         {
             if (cbCats.SelectedIndex == -1) txtYeniCat.Text = string.Empty;
-            else cbCats.Text = txtYeniCat.Text;
+            //else cbCats.Text = txtYeniCat.Text;
 
             Category category = new Category()
             {
@@ -57,6 +57,11 @@ namespace CaloriMeter.UI.Views.AdminForms
             bool updateCat = categoryService.Update(category);
             if (updateCat) MessageBox.Show("Yeni kategori başarı ile eklendi.");
             context.SaveChanges();
+        }
+
+        private void cbCats_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbCats.Text = txtYeniCat.Text;
         }
     }
 }

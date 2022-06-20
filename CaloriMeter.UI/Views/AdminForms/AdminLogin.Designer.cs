@@ -42,6 +42,7 @@
             this.btnkategoriEkle.TabIndex = 5;
             this.btnkategoriEkle.Text = "Kategori Kontrol";
             this.btnkategoriEkle.UseVisualStyleBackColor = true;
+            this.btnkategoriEkle.Click += new System.EventHandler(this.btnkategoriEkle_Click);
             // 
             // btnIstatistik
             // 
@@ -52,6 +53,7 @@
             this.btnIstatistik.TabIndex = 2;
             this.btnIstatistik.Text = "İstatistik Kontrol";
             this.btnIstatistik.UseVisualStyleBackColor = true;
+            this.btnIstatistik.Click += new System.EventHandler(this.btnIstatistik_Click);
             // 
             // btnKategori
             // 
@@ -62,6 +64,7 @@
             this.btnKategori.TabIndex = 3;
             this.btnKategori.Text = "Ürün Kontrol";
             this.btnKategori.UseVisualStyleBackColor = true;
+            this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
             // 
             // btnKullaniciKontrol
             // 
@@ -72,6 +75,7 @@
             this.btnKullaniciKontrol.TabIndex = 4;
             this.btnKullaniciKontrol.Text = "Kullanıcı Kontrol";
             this.btnKullaniciKontrol.UseVisualStyleBackColor = true;
+            this.btnKullaniciKontrol.Click += new System.EventHandler(this.btnKullaniciKontrol_Click);
             // 
             // AdminLogin
             // 

@@ -64,6 +64,7 @@
             this.txtAra.Name = "txtAra";
             this.txtAra.Size = new System.Drawing.Size(543, 29);
             this.txtAra.TabIndex = 2;
+            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
             // 
             // btnGuncelle
             // 
@@ -73,6 +74,7 @@
             this.btnGuncelle.TabIndex = 3;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnAra
             // 
@@ -82,6 +84,7 @@
             this.btnAra.TabIndex = 3;
             this.btnAra.Text = "Bul";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // btnGoruntule
             // 
@@ -91,6 +94,7 @@
             this.btnGoruntule.TabIndex = 3;
             this.btnGoruntule.Text = "Tümünü Görüntüle";
             this.btnGoruntule.UseVisualStyleBackColor = true;
+            this.btnGoruntule.Click += new System.EventHandler(this.btnGoruntule_Click);
             // 
             // AdminUserControl
             // 
@@ -107,6 +111,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminUserControl";
             this.Text = "AdminUserControl";
+            this.Load += new System.EventHandler(this.AdminUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

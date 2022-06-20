@@ -102,6 +102,7 @@
             this.btnEkle.TabIndex = 38;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnGuncelle
             // 
@@ -111,6 +112,7 @@
             this.btnGuncelle.TabIndex = 39;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -120,6 +122,7 @@
             this.btnSil.TabIndex = 40;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // lvListe
             // 
@@ -136,6 +139,7 @@
             this.lvListe.TabIndex = 37;
             this.lvListe.UseCompatibleStateImageBehavior = false;
             this.lvListe.View = System.Windows.Forms.View.Details;
+            this.lvListe.SelectedIndexChanged += new System.EventHandler(this.lvListe_SelectedIndexChanged);
             // 
             // columnHeader3
             // 
@@ -206,6 +210,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminCategoriesandFoods";
             this.Text = "AdminCategoriesandFoods";
+            this.Load += new System.EventHandler(this.AdminCategoriesandFoods_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
