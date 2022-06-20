@@ -99,23 +99,23 @@ namespace CaloriMeter.UI.Views.UserForms
                 List<MealType> mealTypes = mealTypeService.GetAllTypes();
 
 
-                int kahvaltiAdet = allMeals.Where(a => a.MealTypeID == 1 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Count;
-                int kahvaltiKalori = allMeals.Where(a => a.MealTypeID == 1 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
+                int kahvaltiAdet = allMeals.Where(a => a.MealTypeID == 1 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Count;
+                int kahvaltiKalori = allMeals.Where(a => a.MealTypeID == 1 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
                 lbl_ybrKA.Text = kahvaltiAdet.ToString();
                 lbl_ybrKK.Text = kahvaltiKalori.ToString();
 
-                int oglenAdet = allMeals.Where(a => a.MealTypeID == 2 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Count;
-                int oglenKalori = allMeals.Where(a => a.MealTypeID == 2 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
+                int oglenAdet = allMeals.Where(a => a.MealTypeID == 2 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Count;
+                int oglenKalori = allMeals.Where(a => a.MealTypeID == 2 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
                 lbl_ybrOA.Text = oglenAdet.ToString();
                 lbl_ybrOK.Text = oglenKalori.ToString();
 
-                int aksamAdet = allMeals.Where(a => a.MealTypeID == 3 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Count;
-                int aksamKalori = allMeals.Where(a => a.MealTypeID == 3 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
+                int aksamAdet = allMeals.Where(a => a.MealTypeID == 3 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Count;
+                int aksamKalori = allMeals.Where(a => a.MealTypeID == 3 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
                 lbl_ybrAA.Text = aksamAdet.ToString();
                 lbl_ybrAK.Text = aksamKalori.ToString();
 
-                int araAdet = allMeals.Where(a => a.MealTypeID == 4 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Count;
-                int araKalori = allMeals.Where(a => a.MealTypeID == 4 && a.MealDetails.All(b => b.Food.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
+                int araAdet = allMeals.Where(a => a.MealTypeID == 4 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Count;
+                int araKalori = allMeals.Where(a => a.MealTypeID == 4 && a.MealDetails.All(b => b.FoodID == secilenFood.FoodID)).ToList().Sum(g => g.MealDetails.Sum(h => h.Calory));
                 lbl_ybrARA.Text = araAdet.ToString();
                 lbl_ybrARK.Text = araKalori.ToString();
             }

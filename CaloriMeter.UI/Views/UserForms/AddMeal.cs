@@ -145,6 +145,7 @@ namespace CaloriMeter.UI.Views.UserForms
                 secilenFood = null;
                 myMeal.MealDetails.Add(mealDetail);
                 FillList();
+                TextBoxesClear();
             }
         }
 
@@ -172,9 +173,10 @@ namespace CaloriMeter.UI.Views.UserForms
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            int index = lst_ogunDetay.SelectedItems[0].Index;
-            if ( index > -1)
+            
+            if (lst_ogunDetay.SelectedItems.Count > 0)
             {
+                int index = lst_ogunDetay.SelectedItems[0].Index;
                 myMeal.MealDetails.Remove((MealDetail)lst_ogunDetay.SelectedItems[0].Tag);
             }
 
@@ -205,7 +207,6 @@ namespace CaloriMeter.UI.Views.UserForms
                 MessageBox.Show("Öğün eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearForm();
-
             }
             catch (Exception ex)
             {
@@ -215,9 +216,14 @@ namespace CaloriMeter.UI.Views.UserForms
 
         void ClearForm()
         {
-            secilenFood = null;
             myMeal = new Meal();
+            secilenFood = null;
             lst_ogunDetay.Items.Clear();
+            TextBoxesClear();
+        }
+
+        void TextBoxesClear()
+        {
             txt_yemekAdi.Clear();
             txt_kalori.Clear();
             nud_gram.Value = nud_gram.Minimum;

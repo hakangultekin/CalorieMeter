@@ -129,6 +129,7 @@
             // 
             // txt_yemekAdi
             // 
+            this.txt_yemekAdi.Enabled = false;
             this.txt_yemekAdi.Location = new System.Drawing.Point(57, 99);
             this.txt_yemekAdi.Name = "txt_yemekAdi";
             this.txt_yemekAdi.ReadOnly = true;
