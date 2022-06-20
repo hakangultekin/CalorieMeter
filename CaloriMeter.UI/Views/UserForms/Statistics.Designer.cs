@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistics));
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_aksamYemegiToplam = new System.Windows.Forms.Label();
             this.lbl_ogleYemegiToplam = new System.Windows.Forms.Label();
@@ -612,6 +613,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(762, 883);
             this.Name = "Statistics";
