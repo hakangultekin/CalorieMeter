@@ -176,6 +176,7 @@
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminCategoryControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kategori Kontrol Paneli";
             this.ResumeLayout(false);
             this.PerformLayout();
