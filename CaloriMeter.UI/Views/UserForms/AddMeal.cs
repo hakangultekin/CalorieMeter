@@ -128,10 +128,11 @@ namespace CaloriMeter.UI.Views.UserForms
 
         private void nud_gram_ValueChanged(object sender, EventArgs e)
         {
-            decimal kalori = (decimal)(secilenFood.Per100Cal / 100.0) * nud_gram.Value;
-
             if (secilenFood != null)
+            {
+                decimal kalori = (decimal)(secilenFood.Per100Cal / 100.0) * nud_gram.Value;
                 txt_kalori.Text = Convert.ToInt32(kalori).ToString();
+            }
         }
 
         private void btn_ekle_Click(object sender, EventArgs e)

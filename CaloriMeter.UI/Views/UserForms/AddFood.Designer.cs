@@ -43,9 +43,10 @@
             // 
             // cb_kategoriler
             // 
+            this.cb_kategoriler.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_kategoriler.FormattingEnabled = true;
             this.cb_kategoriler.Location = new System.Drawing.Point(21, 116);
-            this.cb_kategoriler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_kategoriler.Margin = new System.Windows.Forms.Padding(4);
             this.cb_kategoriler.Name = "cb_kategoriler";
             this.cb_kategoriler.Size = new System.Drawing.Size(160, 27);
             this.cb_kategoriler.TabIndex = 0;
@@ -143,7 +144,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_kategoriler);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Yemek Ekle";

@@ -12,7 +12,7 @@ namespace CaloriMeter.DAL
 {
     public class CalorieMeterDbContext : DbContext
     {
-        public CalorieMeterDbContext() : base("data source=ROBER;initial catalog=CalorieMeterDB;integrated security=True;")
+        public CalorieMeterDbContext() : base("data source=DESKTOP-T1ES9FG;initial catalog=CalorieMeterDB;USER ID=sa;password=1907302;")
         {
             Database.SetInitializer(new CalorieMeterStrategy());
         }
