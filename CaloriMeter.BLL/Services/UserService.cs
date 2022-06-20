@@ -131,6 +131,7 @@ namespace CaloriMeter.BLL.Services
             if (string.IsNullOrEmpty(user.UserName)) throw new Exception("Username alanı boş olamaz.");
             if (string.IsNullOrEmpty(user.Password)) throw new Exception("Şifre alanı boş olamaz.");
             if (string.IsNullOrWhiteSpace(user.Height.ToString()) || string.IsNullOrWhiteSpace(user.Weight.ToString())) throw new Exception("Boy ve kilo alanlarını giriniz.");
+            if (user.Age < 18) throw new Exception("Kullanıcı 18 yaşından büyük olmalıdır.");
         }
 
         void CheckEmailValid(string value)
