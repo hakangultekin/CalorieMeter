@@ -94,5 +94,12 @@ namespace CaloriMeter.UI.Views.UserForms
         {
             FillList(foodService.GetAllByUser(userid));
         }
+
+        private void btn_yeniEkle_Click(object sender, EventArgs e)
+        {
+            AddFood addFood = new AddFood(userid);
+            addFood.ShowDialog();
+            FillList(foodService.GetAllByUser(userid));
+        }
     }
 }

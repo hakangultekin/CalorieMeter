@@ -32,12 +32,14 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txt_yemekAdi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_kategoriler = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_yeniEkle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -72,6 +74,11 @@
             // 
             this.columnHeader3.Text = "Porsiyon Gr/Ml";
             this.columnHeader3.Width = 120;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Categori";
+            this.columnHeader4.Width = 250;
             // 
             // txt_yemekAdi
             // 
@@ -124,26 +131,48 @@
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // columnHeader4
+            // label3
             // 
-            this.columnHeader4.Text = "Categori";
-            this.columnHeader4.Width = 250;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8F);
+            this.label3.Location = new System.Drawing.Point(12, 606);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(234, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Aradığınız yiyecek/içerecek listede yok mu?";
+            // 
+            // btn_yeniEkle
+            // 
+            this.btn_yeniEkle.Font = new System.Drawing.Font("Microsoft YaHei", 8F);
+            this.btn_yeniEkle.Image = global::CaloriMeter.UI.Properties.Resources.kayit32x32;
+            this.btn_yeniEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_yeniEkle.Location = new System.Drawing.Point(151, 625);
+            this.btn_yeniEkle.Name = "btn_yeniEkle";
+            this.btn_yeniEkle.Size = new System.Drawing.Size(95, 33);
+            this.btn_yeniEkle.TabIndex = 4;
+            this.btn_yeniEkle.Text = "Yeni Ekle";
+            this.btn_yeniEkle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_yeniEkle.UseVisualStyleBackColor = true;
+            this.btn_yeniEkle.Click += new System.EventHandler(this.btn_yeniEkle_Click);
             // 
             // MealSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1049, 672);
+            this.Controls.Add(this.btn_yeniEkle);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.cmb_kategoriler);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_yemekAdi);
             this.Controls.Add(this.listView1);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MealSearch";
-            this.Text = "Yemek Adı";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Yemek Seç";
             this.Load += new System.EventHandler(this.MealSearch_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -162,5 +191,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_yeniEkle;
     }
 }
