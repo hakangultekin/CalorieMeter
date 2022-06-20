@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodControlPanel));
             this.nud_portionSize = new System.Windows.Forms.NumericUpDown();
             this.nud_calPer100 = new System.Windows.Forms.NumericUpDown();
             this.txt_name = new System.Windows.Forms.TextBox();
@@ -227,6 +228,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(426, 388);
             this.Name = "FoodControlPanel";

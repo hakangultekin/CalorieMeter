@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddMeal));
             this.cb_mealTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lst_ogunDetay = new System.Windows.Forms.ListView();
@@ -284,6 +285,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_mealTypes);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(739, 549);
             this.Name = "AddMeal";

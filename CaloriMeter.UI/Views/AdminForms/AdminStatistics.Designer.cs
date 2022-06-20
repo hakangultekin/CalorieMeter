@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminStatistics));
             this.grpVeri = new System.Windows.Forms.GroupBox();
             this.lblEnCAt = new System.Windows.Forms.Label();
             this.lblEnIcecek = new System.Windows.Forms.Label();
@@ -90,7 +91,7 @@
             this.lblEnCAt.AutoSize = true;
             this.lblEnCAt.Location = new System.Drawing.Point(290, 419);
             this.lblEnCAt.Name = "lblEnCAt";
-            this.lblEnCAt.Size = new System.Drawing.Size(60, 23);
+            this.lblEnCAt.Size = new System.Drawing.Size(50, 20);
             this.lblEnCAt.TabIndex = 30;
             this.lblEnCAt.Text = "label9";
             // 
@@ -99,7 +100,7 @@
             this.lblEnIcecek.AutoSize = true;
             this.lblEnIcecek.Location = new System.Drawing.Point(244, 364);
             this.lblEnIcecek.Name = "lblEnIcecek";
-            this.lblEnIcecek.Size = new System.Drawing.Size(60, 23);
+            this.lblEnIcecek.Size = new System.Drawing.Size(50, 20);
             this.lblEnIcecek.TabIndex = 31;
             this.lblEnIcecek.Text = "label9";
             // 
@@ -108,7 +109,7 @@
             this.lblEnAra.AutoSize = true;
             this.lblEnAra.Location = new System.Drawing.Point(433, 309);
             this.lblEnAra.Name = "lblEnAra";
-            this.lblEnAra.Size = new System.Drawing.Size(60, 23);
+            this.lblEnAra.Size = new System.Drawing.Size(50, 20);
             this.lblEnAra.TabIndex = 32;
             this.lblEnAra.Text = "label9";
             // 
@@ -117,7 +118,7 @@
             this.lblEnAksam.AutoSize = true;
             this.lblEnAksam.Location = new System.Drawing.Point(487, 254);
             this.lblEnAksam.Name = "lblEnAksam";
-            this.lblEnAksam.Size = new System.Drawing.Size(60, 23);
+            this.lblEnAksam.Size = new System.Drawing.Size(50, 20);
             this.lblEnAksam.TabIndex = 33;
             this.lblEnAksam.Text = "label9";
             // 
@@ -126,7 +127,7 @@
             this.lblEnÖgle.AutoSize = true;
             this.lblEnÖgle.Location = new System.Drawing.Point(473, 199);
             this.lblEnÖgle.Name = "lblEnÖgle";
-            this.lblEnÖgle.Size = new System.Drawing.Size(60, 23);
+            this.lblEnÖgle.Size = new System.Drawing.Size(50, 20);
             this.lblEnÖgle.TabIndex = 34;
             this.lblEnÖgle.Text = "label9";
             // 
@@ -135,7 +136,7 @@
             this.lblEnYiyecek.AutoSize = true;
             this.lblEnYiyecek.Location = new System.Drawing.Point(263, 89);
             this.lblEnYiyecek.Name = "lblEnYiyecek";
-            this.lblEnYiyecek.Size = new System.Drawing.Size(60, 23);
+            this.lblEnYiyecek.Size = new System.Drawing.Size(50, 20);
             this.lblEnYiyecek.TabIndex = 35;
             this.lblEnYiyecek.Text = "label9";
             // 
@@ -144,7 +145,7 @@
             this.lblEnKahvalti.AutoSize = true;
             this.lblEnKahvalti.Location = new System.Drawing.Point(433, 144);
             this.lblEnKahvalti.Name = "lblEnKahvalti";
-            this.lblEnKahvalti.Size = new System.Drawing.Size(60, 23);
+            this.lblEnKahvalti.Size = new System.Drawing.Size(50, 20);
             this.lblEnKahvalti.TabIndex = 35;
             this.lblEnKahvalti.Text = "label9";
             // 
@@ -154,7 +155,7 @@
             this.label15.Location = new System.Drawing.Point(20, 364);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(217, 23);
+            this.label15.Size = new System.Drawing.Size(181, 20);
             this.label15.TabIndex = 23;
             this.label15.Text = "En çok tüketilen içecek : -";
             // 
@@ -164,7 +165,7 @@
             this.label16.Location = new System.Drawing.Point(65, 309);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(361, 23);
+            this.label16.Size = new System.Drawing.Size(298, 20);
             this.label16.TabIndex = 24;
             this.label16.Text = "Ara Öğünde en çok tercih edilen yiyecek : -";
             // 
@@ -174,7 +175,7 @@
             this.label17.Location = new System.Drawing.Point(65, 254);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(415, 23);
+            this.label17.Size = new System.Drawing.Size(341, 20);
             this.label17.TabIndex = 25;
             this.label17.Text = "Akşam Yemeğinde en çok tercih edilen yiyecek : -";
             // 
@@ -184,7 +185,7 @@
             this.label18.Location = new System.Drawing.Point(65, 199);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(401, 23);
+            this.label18.Size = new System.Drawing.Size(328, 20);
             this.label18.TabIndex = 26;
             this.label18.Text = "Öğle Yemeğinde en çok tercih edilen yiyecek : -";
             // 
@@ -194,7 +195,7 @@
             this.label19.Location = new System.Drawing.Point(65, 144);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(347, 23);
+            this.label19.Size = new System.Drawing.Size(287, 20);
             this.label19.TabIndex = 27;
             this.label19.Text = "Kahvaltıda en çok tercih edilen yiyecek : -";
             // 
@@ -204,7 +205,7 @@
             this.label20.Location = new System.Drawing.Point(20, 419);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(263, 23);
+            this.label20.Size = new System.Drawing.Size(219, 20);
             this.label20.TabIndex = 28;
             this.label20.Text = "En çok tercih edilen kategori : -";
             // 
@@ -214,7 +215,7 @@
             this.label21.Location = new System.Drawing.Point(20, 89);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(226, 23);
+            this.label21.Size = new System.Drawing.Size(188, 20);
             this.label21.TabIndex = 29;
             this.label21.Text = "En çok tüketilen yiyecek : -";
             // 
@@ -223,7 +224,7 @@
             this.lblKategori.AutoSize = true;
             this.lblKategori.Location = new System.Drawing.Point(300, 501);
             this.lblKategori.Name = "lblKategori";
-            this.lblKategori.Size = new System.Drawing.Size(60, 23);
+            this.lblKategori.Size = new System.Drawing.Size(50, 20);
             this.lblKategori.TabIndex = 39;
             this.lblKategori.Text = "label9";
             // 
@@ -232,7 +233,7 @@
             this.lblIcecek.AutoSize = true;
             this.lblIcecek.Location = new System.Drawing.Point(254, 446);
             this.lblIcecek.Name = "lblIcecek";
-            this.lblIcecek.Size = new System.Drawing.Size(60, 23);
+            this.lblIcecek.Size = new System.Drawing.Size(50, 20);
             this.lblIcecek.TabIndex = 38;
             this.lblIcecek.Text = "label9";
             // 
@@ -241,7 +242,7 @@
             this.lblAraOgun.AutoSize = true;
             this.lblAraOgun.Location = new System.Drawing.Point(443, 391);
             this.lblAraOgun.Name = "lblAraOgun";
-            this.lblAraOgun.Size = new System.Drawing.Size(60, 23);
+            this.lblAraOgun.Size = new System.Drawing.Size(50, 20);
             this.lblAraOgun.TabIndex = 37;
             this.lblAraOgun.Text = "label9";
             // 
@@ -250,7 +251,7 @@
             this.lblAksam.AutoSize = true;
             this.lblAksam.Location = new System.Drawing.Point(524, 336);
             this.lblAksam.Name = "lblAksam";
-            this.lblAksam.Size = new System.Drawing.Size(60, 23);
+            this.lblAksam.Size = new System.Drawing.Size(50, 20);
             this.lblAksam.TabIndex = 36;
             this.lblAksam.Text = "label9";
             // 
@@ -259,7 +260,7 @@
             this.lblOglen.AutoSize = true;
             this.lblOglen.Location = new System.Drawing.Point(483, 281);
             this.lblOglen.Name = "lblOglen";
-            this.lblOglen.Size = new System.Drawing.Size(60, 23);
+            this.lblOglen.Size = new System.Drawing.Size(50, 20);
             this.lblOglen.TabIndex = 35;
             this.lblOglen.Text = "label9";
             // 
@@ -268,7 +269,7 @@
             this.lblKahvalti.AutoSize = true;
             this.lblKahvalti.Location = new System.Drawing.Point(431, 226);
             this.lblKahvalti.Name = "lblKahvalti";
-            this.lblKahvalti.Size = new System.Drawing.Size(60, 23);
+            this.lblKahvalti.Size = new System.Drawing.Size(50, 20);
             this.lblKahvalti.TabIndex = 34;
             this.lblKahvalti.Text = "label9";
             // 
@@ -285,7 +286,7 @@
             // 
             this.txtAra.Location = new System.Drawing.Point(177, 50);
             this.txtAra.Name = "txtAra";
-            this.txtAra.Size = new System.Drawing.Size(336, 29);
+            this.txtAra.Size = new System.Drawing.Size(336, 25);
             this.txtAra.TabIndex = 32;
             // 
             // label4
@@ -294,7 +295,7 @@
             this.label4.Location = new System.Drawing.Point(30, 446);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(217, 23);
+            this.label4.Size = new System.Drawing.Size(181, 20);
             this.label4.TabIndex = 30;
             this.label4.Text = "En çok tüketilen içecek : -";
             // 
@@ -304,7 +305,7 @@
             this.label8.Location = new System.Drawing.Point(75, 391);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(361, 23);
+            this.label8.Size = new System.Drawing.Size(298, 20);
             this.label8.TabIndex = 29;
             this.label8.Text = "Ara Öğünde en çok tercih edilen yiyecek : -";
             // 
@@ -314,7 +315,7 @@
             this.label7.Location = new System.Drawing.Point(75, 336);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(415, 23);
+            this.label7.Size = new System.Drawing.Size(341, 20);
             this.label7.TabIndex = 28;
             this.label7.Text = "Akşam Yemeğinde en çok tercih edilen yiyecek : -";
             // 
@@ -324,7 +325,7 @@
             this.label6.Location = new System.Drawing.Point(75, 281);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(401, 23);
+            this.label6.Size = new System.Drawing.Size(328, 20);
             this.label6.TabIndex = 27;
             this.label6.Text = "Öğle Yemeğinde en çok tercih edilen yiyecek : -";
             // 
@@ -334,7 +335,7 @@
             this.label5.Location = new System.Drawing.Point(75, 226);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(347, 23);
+            this.label5.Size = new System.Drawing.Size(287, 20);
             this.label5.TabIndex = 26;
             this.label5.Text = "Kahvaltıda en çok tercih edilen yiyecek : -";
             // 
@@ -344,7 +345,7 @@
             this.label3.Location = new System.Drawing.Point(30, 501);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(263, 23);
+            this.label3.Size = new System.Drawing.Size(219, 20);
             this.label3.TabIndex = 25;
             this.label3.Text = "En çok tercih edilen kategori : -";
             // 
@@ -354,7 +355,7 @@
             this.label2.Location = new System.Drawing.Point(30, 171);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 23);
+            this.label2.Size = new System.Drawing.Size(188, 20);
             this.label2.TabIndex = 31;
             this.label2.Text = "En çok tüketilen yiyecek : -";
             // 
@@ -364,13 +365,13 @@
             this.label1.Location = new System.Drawing.Point(49, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 23);
+            this.label1.Size = new System.Drawing.Size(101, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Kullanıcı Adı :";
             // 
             // AdminStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 639);
             this.Controls.Add(this.grpVeri);
@@ -391,6 +392,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminStatistics";
             this.Text = "AdminStatistics";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLogin));
             this.txt_hosgeldinMesaj = new System.Windows.Forms.Label();
             this.btnAnasayfa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -427,6 +428,7 @@
             this.Controls.Add(this.lbl_personName);
             this.Controls.Add(this.txt_hosgeldinMesaj);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(894, 760);
             this.Name = "UserLogin";
